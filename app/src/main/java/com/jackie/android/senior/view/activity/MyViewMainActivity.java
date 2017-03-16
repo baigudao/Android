@@ -1,8 +1,8 @@
 package com.jackie.android.senior.view.activity;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.view.View;
 
 import com.jackie.android.R;
 
@@ -19,7 +19,8 @@ public class MyViewMainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_view_main);
 
-        View view = new View(this);
-        view.getX();
+        MyView myView = new MyView(this);
+        myView.layout(33,33,33,33);
+        myView.setBackgroundColor(Color.RED);
     }
 }
