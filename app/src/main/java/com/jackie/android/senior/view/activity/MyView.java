@@ -50,6 +50,4 @@ public class MyView extends View {
         return super.onGenericMotionEvent(event);
     }
 
-
-
 }
