@@ -25,7 +25,8 @@ public class BiBiCarMallWebsiteActivity extends Activity {
     }
 
     private void LoadBiBiCarMallWebsite() {
-        String url = "http://wap.bibicar.cn/shop";//网页地址
+//        String url = "http://wap.bibicar.cn/shop";//网页地址
+        String url = "http://www.baidu.com";
         if (!TextUtils.isEmpty(url)) {
             WebSettings webSettings = webView.getSettings();
 
@@ -52,6 +53,9 @@ public class BiBiCarMallWebsiteActivity extends Activity {
 
             //            webSettings.setAllowFileAccessFromFileURLs(false);//参见官方API
             //            webSettings.setAllowUniversalAccessFromFileURLs(false)//参见官方API
+
+            webView.setWebViewClient(new MyWebViewClient(this));
+
             webView.loadUrl(url);
 
         }
