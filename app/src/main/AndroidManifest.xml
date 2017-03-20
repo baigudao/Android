@@ -23,6 +23,10 @@
         </activity>
         <activity android:name=".base.webview.BiBiCarMallWebsiteActivity">
         </activity>
+        <activity android:name=".base.webview.WebViewReferenceActivity">
+        </activity>
+        <activity android:name=".base.listview.MyListViewMainActivity">
+        </activity>
     </application>
 
 </manifest>

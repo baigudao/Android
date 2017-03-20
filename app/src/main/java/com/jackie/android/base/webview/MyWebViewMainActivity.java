@@ -12,6 +12,7 @@ public class MyWebViewMainActivity extends Activity implements View.OnClickListe
 
 
     private Button btn_load;
+    private Button btn_reference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +20,10 @@ public class MyWebViewMainActivity extends Activity implements View.OnClickListe
         setContentView(R.layout.activity_my_web_view_main);
 
         btn_load = (Button) findViewById(R.id.btn_load);
+        btn_reference = (Button)findViewById(R.id.btn_reference);
 
         btn_load.setOnClickListener(this);
+        btn_reference.setOnClickListener(this);
     }
 
     @Override
@@ -28,6 +31,9 @@ public class MyWebViewMainActivity extends Activity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btn_load:
                 startActivity(new Intent(this,BiBiCarMallWebsiteActivity.class));
+                break;
+            case R.id.btn_reference:
+                startActivity(new Intent(this,WebViewReferenceActivity.class));
                 break;
             default:
                 break;

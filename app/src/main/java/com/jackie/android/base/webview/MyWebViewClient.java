@@ -19,7 +19,7 @@ import android.webkit.WebViewClient;
 /**
  * Created by jackie on 2017/3/19 22:31.
  * QQ : 971060378
- * Used as :
+ * Used as :详细列出了所有的方法
  * Sets the WebViewClient that will receive various notifications and requests. This will replace the current handler.
  * Sets the chrome handler. This is an implementation of WebChromeClient for use in handling JavaScript dialogs, favicons, titles, and the progress. This will replace the current handler.
  */
@@ -116,6 +116,7 @@ public class MyWebViewClient extends WebViewClient {
 
     /**
      * 拦截 url 跳转,在里边添加点击链接跳转或者操作
+     * 每次超链接在加载前都会先走shouldOverrideUrlLoading回调
      */
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {

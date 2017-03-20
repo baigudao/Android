@@ -25,7 +25,7 @@ public class BiBiCarMallWebsiteActivity extends Activity {
     }
 
     private void LoadBiBiCarMallWebsite() {
-//        String url = "http://wap.bibicar.cn/shop";//网页地址
+        //        String url = "http://wap.bibicar.cn/shop";//网页地址
         String url = "http://www.baidu.com";
         if (!TextUtils.isEmpty(url)) {
             WebSettings webSettings = webView.getSettings();
@@ -54,9 +54,16 @@ public class BiBiCarMallWebsiteActivity extends Activity {
             //            webSettings.setAllowFileAccessFromFileURLs(false);//参见官方API
             //            webSettings.setAllowUniversalAccessFromFileURLs(false)//参见官方API
 
-            webView.setWebViewClient(new MyWebViewClient(this));
+            /**
+             * WebViewClient与WebChromeClient的区别
+             *WebViewClient:在影响View的事件到来时，会通过WebViewClient中的方法回调通知用户
+             *WebChromeClient：当影响浏览器的事件到来时，就会通过WebChromeClient中的方法回调通知用法。
+             */
+            webView.setWebViewClient(new MyWebViewClient(this));//要在WebView中打开链接，就必须要设置WebViewClient;
 
-            webView.loadUrl(url);
+            webView.setWebChromeClient(new MyWebChromeClient());//实现网页中对话框的弹出都要设置MyWebChromeClient
+
+            webView.loadUrl("file:///android_asset/test.html");//加载在线URL
 
         }
     }
