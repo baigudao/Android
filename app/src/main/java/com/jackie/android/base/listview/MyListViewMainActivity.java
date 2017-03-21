@@ -2,9 +2,11 @@ package com.jackie.android.base.listview;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.jackie.android.R;
 
@@ -22,7 +24,7 @@ public class MyListViewMainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_list_view_main);
 
-        list_view = (ListView)findViewById(R.id.list_view);
+        list_view = (ListView) findViewById(R.id.list_view);
 
         //始终是这三步：1，准备数据；2，定义适配器，3，设置适配器
         //准备数据
@@ -31,13 +33,26 @@ public class MyListViewMainActivity extends Activity {
         strings.add("沙和尚");
         strings.add("猪八戒");
         //定义适配器
-        adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,strings);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, strings);
         //设置适配器
         list_view.setAdapter(adapter);
 
-        ImageView imageView = new ImageView(this);
-        imageView.setBackground(getResources().getDrawable(R.drawable.other_follow));
-        list_view.addFooterView(imageView);
 
+        //设置点击事件
+        setOnItemClickListener();
+    }
+
+    private void setOnItemClickListener() {
+        list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String string = strings.get(position);
+                if (string.equals("孙悟空")) {
+                    Toast.makeText(MyListViewMainActivity.this, "孙悟空", Toast.LENGTH_SHORT).show();
+                } else if (string.equals("猪八戒")) {
+                    Toast.makeText(MyListViewMainActivity.this, "猪八戒", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 }
