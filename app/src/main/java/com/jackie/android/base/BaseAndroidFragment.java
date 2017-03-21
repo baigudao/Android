@@ -8,6 +8,7 @@ import android.widget.ListView;
 import com.jackie.android.BaseFragment;
 import com.jackie.android.R;
 import com.jackie.android.base.listview.MyListViewMainActivity;
+import com.jackie.android.base.recyclerview.MyRecyclerViewMainActivity;
 import com.jackie.android.base.webview.MyWebViewMainActivity;
 
 /**
@@ -36,6 +37,8 @@ public class BaseAndroidFragment extends BaseFragment {
                     startActivity(new Intent(mContext,MyWebViewMainActivity.class));
                 }else if (data.toLowerCase().equals("listview")){
                     startActivity(new Intent(mContext, MyListViewMainActivity.class));
+                }else if (data.toLowerCase().equals("recyclerview")){
+                    startActivity(new Intent(mContext, MyRecyclerViewMainActivity.class));
                 }
             }
         });
@@ -46,7 +49,7 @@ public class BaseAndroidFragment extends BaseFragment {
     protected void initData() {
         super.initData();
         //准备数据
-        datas = new String[]{"ListView","WebView",
+        datas = new String[]{"ListView","RecyclerView","WebView",
                 "....."};
         //设置适配器
         adapter = new BaseAndroidFragmentAdapter(mContext, datas);

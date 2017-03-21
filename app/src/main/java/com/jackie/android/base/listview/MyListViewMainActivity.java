@@ -37,7 +37,6 @@ public class MyListViewMainActivity extends Activity {
         //设置适配器
         list_view.setAdapter(adapter);
 
-
         //设置点击事件
         setOnItemClickListener();
     }
