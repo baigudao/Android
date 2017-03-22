@@ -7,7 +7,8 @@ import android.widget.ListView;
 
 import com.jackie.android.BaseFragment;
 import com.jackie.android.R;
-import com.jackie.android.frame.rong_cloud.activity.MyRongCloudIMMainActivity;
+import com.jackie.android.frame.pulltorefresh.MyPullToRefreshMainActivity;
+import com.jackie.android.frame.rongcloud.activity.MyRongCloudIMMainActivity;
 
 /**
  * Created by jackie on 2017/3/12 15:33.
@@ -33,6 +34,8 @@ public class CommonFrameFragment extends BaseFragment {
                 String data = datas[position];
                 if (data.equals("融云即时通讯")){
                     startActivity(new Intent(mContext,MyRongCloudIMMainActivity.class));
+                }else if (data.toLowerCase().equals("pulltorefresh")){
+                    startActivity(new Intent(mContext,MyPullToRefreshMainActivity.class));
                 }
             }
         });
@@ -43,7 +46,7 @@ public class CommonFrameFragment extends BaseFragment {
     protected void initData() {
         super.initData();
         //准备数据
-        datas = new String[]{"融云即时通讯",
+        datas = new String[]{"PullToRefresh","融云即时通讯",
                 "....."};
         //设置适配器
         adapter = new CommonFrameFragmentAdapter(mContext, datas);

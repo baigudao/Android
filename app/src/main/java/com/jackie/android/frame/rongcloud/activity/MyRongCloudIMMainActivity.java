@@ -1,4 +1,4 @@
-package com.jackie.android.frame.rong_cloud.activity;
+package com.jackie.android.frame.rongcloud.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

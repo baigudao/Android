@@ -17,7 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".frame.rong_cloud.activity.MyRongCloudIMMainActivity" />
+        <activity android:name=".frame.rongcloud.activity.MyRongCloudIMMainActivity" />
         <activity android:name=".senior.view.activity.MyViewMainActivity" />
         <activity android:name=".base.webview.MyWebViewMainActivity" />
         <activity android:name=".base.webview.BiBiCarMallWebsiteActivity" />
@@ -30,6 +30,7 @@
         <activity android:name=".base.recyclerview.gridview.MyRVGridViewActivity" />
         <activity android:name=".base.recyclerview.flowview.MyRVFlowViewActivity" />
         <activity android:name=".base.recyclerview.RecyclerViewReferenceActivity" />
+        <activity android:name=".frame.pulltorefresh.MyPullToRefreshMainActivity"></activity>
     </application>
 
 </manifest>
