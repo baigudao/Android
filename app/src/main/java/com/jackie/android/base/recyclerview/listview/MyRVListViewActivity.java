@@ -15,6 +15,15 @@ import com.jackie.android.base.recyclerview.utils.DividerItemDecoration;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * RecyclerView总结:
+ * 1，可以实现ListView，GridView，瀑布流的效果
+ * 2，一定要设置布局管理器
+ * 3，设置分割线
+ * 4，设置item的点击和长按事件
+ * 5，添加和移除数据
+ * 6，设置添加和移除动画
+ */
 public class MyRVListViewActivity extends Activity implements View.OnClickListener {
 
     private RecyclerView recycler_view;
@@ -65,7 +74,6 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
 
         btn_add.setOnClickListener(this);
         btn_remove.setOnClickListener(this);
-
 
         //设置Item增加、移除动画
         recycler_view.setItemAnimator(new DefaultItemAnimator());

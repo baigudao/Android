@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.jackie.android">
+    package="com.jackie.android">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,25 +12,24 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".frame.rong_cloud.activity.MyRongCloudIMMainActivity"/>
-        <activity android:name=".senior.view.activity.MyViewMainActivity"/>
-        <activity android:name=".base.webview.MyWebViewMainActivity"/>
-        <activity android:name=".base.webview.BiBiCarMallWebsiteActivity"/>
-        <activity android:name=".base.webview.WebViewReferenceActivity"/>
-        <activity android:name=".base.listview.MyListViewMainActivity"/>
-        <activity android:name=".base.recyclerview.MyRecyclerViewMainActivity"/>
-        <activity android:name=".base.recyclerview.listview.MyRVListViewActivity"/>
-        <activity android:name=".base.recyclerview.gridview.MyRVGridViewActivity">
-        </activity>
-        <activity android:name=".base.recyclerview.flowview.MyRVFlowViewActivity">
-        </activity>
-        <activity android:name=".base.recyclerview.RecyclerViewReferenceActivity">
-        </activity>
+        <activity android:name=".frame.rong_cloud.activity.MyRongCloudIMMainActivity" />
+        <activity android:name=".senior.view.activity.MyViewMainActivity" />
+        <activity android:name=".base.webview.MyWebViewMainActivity" />
+        <activity android:name=".base.webview.BiBiCarMallWebsiteActivity" />
+        <activity android:name=".base.webview.WebViewReferenceActivity" />
+        <activity android:name=".base.listview.MyListViewMainActivity" />
+        <activity android:name=".base.recyclerview.MyRecyclerViewMainActivity" />
+        <activity
+            android:name=".base.recyclerview.listview.MyRVListViewActivity"
+            android:theme="@style/listDividerTheme" />
+        <activity android:name=".base.recyclerview.gridview.MyRVGridViewActivity" />
+        <activity android:name=".base.recyclerview.flowview.MyRVFlowViewActivity" />
+        <activity android:name=".base.recyclerview.RecyclerViewReferenceActivity" />
     </application>
 
 </manifest>
