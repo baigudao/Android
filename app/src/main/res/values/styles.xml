@@ -7,6 +7,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <!--<item name="android:windowBackground">@drawable/jackie_chen</item>&lt;!&ndash;窗口的背景:在应用启动时和xml文件的背景&ndash;&gt;-->
+
+        <!--<item name="android:listDivider">@drawable/divider_bg</item>-->
     </style>
 
 
@@ -19,7 +21,7 @@
         <item name="android:drawablePadding">3dp</item>
         <item name="android:background">@null</item><!--这个要留意-->
         <item name="android:gravity">center</item>
-        <item name="android:textColor">@drawable/bottom_textcolor_drawable_selector</item>
+        <item name="android:textColor">@drawable/bottom_text_color_drawable_selector</item>
         <item name="android:textSize">10sp</item>
     </style>
 
