@@ -1,11 +1,15 @@
 package com.jackie.android.base.listview;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jackie.android.R;
@@ -18,6 +22,7 @@ public class MyListViewMainActivity extends Activity {
     private ListView list_view;
     private List<String> strings = new ArrayList<>();//新建一个空的集合，用来存放String对象
     private ArrayAdapter<String> adapter;
+    private Button btn_add;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +30,7 @@ public class MyListViewMainActivity extends Activity {
         setContentView(R.layout.activity_my_list_view_main);
 
         list_view = (ListView) findViewById(R.id.list_view);
+        btn_add = (Button) findViewById(R.id.btn_add);
 
         //始终是这三步：1，准备数据；2，定义适配器，3，设置适配器
         //准备数据
@@ -39,6 +45,24 @@ public class MyListViewMainActivity extends Activity {
 
         //设置点击事件
         setOnItemClickListener();
+
+        //添加数据
+        addData();
+    }
+
+    private void addData() {
+        btn_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //在头部添加数据
+                TextView textView = new TextView(MyListViewMainActivity.this);
+                textView.setText("新增的头部数据");
+                textView.setGravity(Gravity.CENTER);
+                textView.setTextSize(18);
+                textView.setTextColor(Color.RED);
+                list_view.addHeaderView(textView);
+            }
+        });
     }
 
     private void setOnItemClickListener() {

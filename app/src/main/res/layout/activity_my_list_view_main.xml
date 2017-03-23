@@ -11,11 +11,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.jackie.android.base.listview.MyListViewMainActivity">
 
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加数据"/>
+
 
     <ListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/btn_add"
         android:divider="@android:color/holo_blue_light"
         android:dividerHeight="10dp"/>
 
