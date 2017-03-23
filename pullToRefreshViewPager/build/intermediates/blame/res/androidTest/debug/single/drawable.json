@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\android_workspace\\Android\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "D:\\android_workspace\\Android\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\Android\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "D:\\android_workspace\\Android\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\drawable\\indicator_bg_bottom.xml"
+    }
+]

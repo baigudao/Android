@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    compile project(':library')
+    compile project(':pullToRefresh')
     compile project(':pullToRefreshListFragment')
     compile project(':pullToRefreshViewPager')
     compile 'com.android.support:support-v4:24.2.1'
