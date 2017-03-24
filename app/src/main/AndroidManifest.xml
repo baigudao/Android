@@ -41,6 +41,19 @@
         </activity>
         <activity android:name=".frame.pulltorefresh.PullToRefreshReferenceActivity">
         </activity>
+        <activity android:name=".frame.glide.MyGlideMainActivity">
+        </activity>
+        <activity android:name=".frame.glide.GlideBaseUseActivity">
+        </activity>
+        <activity android:name=".frame.glide.GlideRecyclerViewActivity">
+        </activity>
+        <activity android:name=".frame.glide.GlideTransformationActivity"/>
+        <activity android:name=".frame.glide.GlideReferenceActivity">
+        </activity>
+        <activity android:name=".frame.jsonparse.MyJSONParseMainActivity">
+        </activity>
+        <activity android:name=".frame.jsonparse.JSONParseByNativeActivity">
+        </activity>
     </application>
 
 </manifest>

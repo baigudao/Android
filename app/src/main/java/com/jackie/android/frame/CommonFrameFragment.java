@@ -7,6 +7,8 @@ import android.widget.ListView;
 
 import com.jackie.android.BaseFragment;
 import com.jackie.android.R;
+import com.jackie.android.frame.glide.MyGlideMainActivity;
+import com.jackie.android.frame.jsonparse.MyJSONParseMainActivity;
 import com.jackie.android.frame.pulltorefresh.MyPullToRefreshMainActivity;
 import com.jackie.android.frame.rongcloud.activity.MyRongCloudIMMainActivity;
 
@@ -36,6 +38,10 @@ public class CommonFrameFragment extends BaseFragment {
                     startActivity(new Intent(mContext,MyRongCloudIMMainActivity.class));
                 }else if (data.toLowerCase().equals("pulltorefresh")){
                     startActivity(new Intent(mContext,MyPullToRefreshMainActivity.class));
+                }else if (data.toLowerCase().equals("glide")){
+                    startActivity(new Intent(mContext,MyGlideMainActivity.class));
+                }else if (data.equals("JSON解析")){
+                    startActivity(new Intent(mContext,MyJSONParseMainActivity.class));
                 }
             }
         });
@@ -46,7 +52,7 @@ public class CommonFrameFragment extends BaseFragment {
     protected void initData() {
         super.initData();
         //准备数据
-        datas = new String[]{"PullToRefresh","融云即时通讯",
+        datas = new String[]{"JSON解析","Glide","PullToRefresh","融云即时通讯",
                 "....."};
         //设置适配器
         adapter = new CommonFrameFragmentAdapter(mContext, datas);

@@ -28,4 +28,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:recyclerview-v7:24.2.1'
     compile project(':pullToRefresh')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'//Glide的图形转换
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'// If you want to use the GPU Filters
 }
