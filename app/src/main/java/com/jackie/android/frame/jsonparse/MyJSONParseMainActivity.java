@@ -53,13 +53,13 @@ public class MyJSONParseMainActivity extends Activity implements View.OnClickLis
                 startActivity(new Intent(this,JSONParseByNativeActivity.class));
                 break;
             case R.id.btn_json_parse_gson:
-                Toast.makeText(this, "hi", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,JSONParseByGSONActivity.class));
                 break;
             case R.id.btn_json_parse_fastjson:
-                Toast.makeText(this, "fast", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,JSONParseByFastJsonActivity.class));
                 break;
             case R.id.btn_reference:
-                Toast.makeText(this, "ref", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "reference", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;

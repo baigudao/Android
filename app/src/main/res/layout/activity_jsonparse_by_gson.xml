@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_jsonparse_by_gson"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jackie.android.frame.jsonparse.JSONParseByGSONActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <Button
+        android:id="@+id/btn_gson_to_java_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="将JSON对象解析成Java对象"/>
+
+    <Button
+        android:id="@+id/btn_gson_to_java_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="将JSON数组解析成Java集合"/>
+
+
+    <Button
+        android:id="@+id/btn_gson_java_to_json_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="将Java对象转换为json对象" />
+
+    <Button
+        android:id="@+id/btn_gson_java_to_json_array"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="将Java集合转换为json数组" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="原始数据；"
+                android:textColor="@android:color/holo_blue_light"/>
+
+            <TextView
+                android:id="@+id/tv_gson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="解析后的数据："
+                android:textColor="@android:color/holo_blue_light"/>
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.jackie.android">
+    package="com.jackie.android">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,48 +12,39 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".frame.rongcloud.activity.MyRongCloudIMMainActivity"/>
-        <activity android:name=".senior.view.activity.MyViewMainActivity"/>
-        <activity android:name=".base.webview.MyWebViewMainActivity"/>
-        <activity android:name=".base.webview.BiBiCarMallWebsiteActivity"/>
-        <activity android:name=".base.webview.WebViewReferenceActivity"/>
-        <activity android:name=".base.listview.MyListViewMainActivity"/>
-        <activity android:name=".base.recyclerview.MyRecyclerViewMainActivity"/>
+        <activity android:name=".frame.rongcloud.activity.MyRongCloudIMMainActivity" />
+        <activity android:name=".senior.view.activity.MyViewMainActivity" />
+        <activity android:name=".base.webview.MyWebViewMainActivity" />
+        <activity android:name=".base.webview.BiBiCarMallWebsiteActivity" />
+        <activity android:name=".base.webview.WebViewReferenceActivity" />
+        <activity android:name=".base.listview.MyListViewMainActivity" />
+        <activity android:name=".base.recyclerview.MyRecyclerViewMainActivity" />
         <activity
             android:name=".base.recyclerview.listview.MyRVListViewActivity"
-            android:theme="@style/listDividerTheme"/>
-        <activity android:name=".base.recyclerview.gridview.MyRVGridViewActivity"/>
-        <activity android:name=".base.recyclerview.flowview.MyRVFlowViewActivity"/>
-        <activity android:name=".base.recyclerview.RecyclerViewReferenceActivity"/>
-        <activity android:name=".frame.pulltorefresh.MyPullToRefreshMainActivity"/>
-        <activity android:name=".frame.pulltorefresh.PullToRefreshListViewActivity">
-        </activity>
-        <activity android:name=".frame.pulltorefresh.PullToRefreshGridViewActivity">
-        </activity>
-        <activity android:name=".frame.pulltorefresh.PullToRefreshWebViewActivity">
-        </activity>
-        <activity android:name=".frame.pulltorefresh.PullToRefreshScrollViewActivity">
-        </activity>
-        <activity android:name=".frame.pulltorefresh.PullToRefreshReferenceActivity">
-        </activity>
-        <activity android:name=".frame.glide.MyGlideMainActivity">
-        </activity>
-        <activity android:name=".frame.glide.GlideBaseUseActivity">
-        </activity>
-        <activity android:name=".frame.glide.GlideRecyclerViewActivity">
-        </activity>
-        <activity android:name=".frame.glide.GlideTransformationActivity"/>
-        <activity android:name=".frame.glide.GlideReferenceActivity">
-        </activity>
-        <activity android:name=".frame.jsonparse.MyJSONParseMainActivity">
-        </activity>
-        <activity android:name=".frame.jsonparse.JSONParseByNativeActivity">
-        </activity>
+            android:theme="@style/listDividerTheme" />
+        <activity android:name=".base.recyclerview.gridview.MyRVGridViewActivity" />
+        <activity android:name=".base.recyclerview.flowview.MyRVFlowViewActivity" />
+        <activity android:name=".base.recyclerview.RecyclerViewReferenceActivity" />
+        <activity android:name=".frame.pulltorefresh.MyPullToRefreshMainActivity" />
+        <activity android:name=".frame.pulltorefresh.PullToRefreshListViewActivity" />
+        <activity android:name=".frame.pulltorefresh.PullToRefreshGridViewActivity" />
+        <activity android:name=".frame.pulltorefresh.PullToRefreshWebViewActivity" />
+        <activity android:name=".frame.pulltorefresh.PullToRefreshScrollViewActivity" />
+        <activity android:name=".frame.pulltorefresh.PullToRefreshReferenceActivity" />
+        <activity android:name=".frame.glide.MyGlideMainActivity" />
+        <activity android:name=".frame.glide.GlideBaseUseActivity" />
+        <activity android:name=".frame.glide.GlideRecyclerViewActivity" />
+        <activity android:name=".frame.glide.GlideTransformationActivity" />
+        <activity android:name=".frame.glide.GlideReferenceActivity" />
+        <activity android:name=".frame.jsonparse.MyJSONParseMainActivity" />
+        <activity android:name=".frame.jsonparse.JSONParseByNativeActivity" />
+        <activity android:name=".frame.jsonparse.JSONParseByGSONActivity" />
+        <activity android:name=".frame.jsonparse.JSONParseByFastJsonActivity"></activity>
     </application>
 
 </manifest>
