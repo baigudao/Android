@@ -53,6 +53,7 @@
         <activity android:name=".frame.floatingactionbutton.MyFloatingActionButtonMainActivity" />
         <activity android:name=".frame.floatingactionbutton.FloatingActionButtonBaseUseActivity" />
         <activity android:name=".GuideActivity"/>
+
     </application>
 
 </manifest>
