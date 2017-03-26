@@ -1,4 +1,4 @@
-include ':app'
+include ':app', ':PhotoView-Sample', ':photoview', ':android-floating-action-button-sample', ':android-floating-action-button'
 include ':pullToRefresh'
 include ':pullToRefreshListFragment'
 include ':pullToRefreshViewPager'

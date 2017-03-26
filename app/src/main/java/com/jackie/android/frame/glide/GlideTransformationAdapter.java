@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.jackie.android.R;
-import com.jackie.android.utils.Utils;
+import com.jackie.android.utils.DensityUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -69,8 +69,8 @@ public class GlideTransformationAdapter extends RecyclerView.Adapter<GlideTransf
 
         switch (integer) {
             case 1: {
-                int width = Utils.dip2px(context, 133.33f);
-                int height = Utils.dip2px(context, 126.33f);
+                int width = DensityUtil.dip2px(context, 133.33f);
+                int height = DensityUtil.dip2px(context, 126.33f);
                 Glide.with(context)
                         .load(R.drawable.check)
                         .override(width, height)
@@ -80,8 +80,8 @@ public class GlideTransformationAdapter extends RecyclerView.Adapter<GlideTransf
                 break;
             }
             case 2: {
-                int width = Utils.dip2px(context, 150.0f);
-                int height = Utils.dip2px(context, 100.0f);
+                int width = DensityUtil.dip2px(context, 150.0f);
+                int height = DensityUtil.dip2px(context, 100.0f);
                 Glide.with(context)
                         .load(R.drawable.check)
                         .override(width, height)

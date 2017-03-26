@@ -10,13 +10,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".frame.rongcloud.activity.MyRongCloudIMMainActivity" />
         <activity android:name=".senior.view.activity.MyViewMainActivity" />
         <activity android:name=".base.webview.MyWebViewMainActivity" />
@@ -44,7 +45,14 @@
         <activity android:name=".frame.jsonparse.MyJSONParseMainActivity" />
         <activity android:name=".frame.jsonparse.JSONParseByNativeActivity" />
         <activity android:name=".frame.jsonparse.JSONParseByGSONActivity" />
-        <activity android:name=".frame.jsonparse.JSONParseByFastJsonActivity"></activity>
+        <activity android:name=".frame.jsonparse.JSONParseByFastJsonActivity" />
+        <activity android:name=".frame.photoview.MyPhotoViewMainActivity" />
+        <activity android:name=".frame.photoview.PhotoViewBaseUseActivity" />
+        <activity android:name=".frame.photoview.PhotoViewViewPagerActivity" />
+        <activity android:name=".frame.photoview.PhotoViewReferenceActivity" />
+        <activity android:name=".frame.floatingactionbutton.MyFloatingActionButtonMainActivity" />
+        <activity android:name=".frame.floatingactionbutton.FloatingActionButtonBaseUseActivity" />
+        <activity android:name=".GuideActivity"/>
     </application>
 
 </manifest>

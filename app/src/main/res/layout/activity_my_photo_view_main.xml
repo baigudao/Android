@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_photo_view_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jackie.android.frame.photoview.MyPhotoViewMainActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <Button
+        android:id="@+id/btn_photo_view_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基本用法" />
+
+    <Button
+        android:id="@+id/btn_photo_view_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ViewPager中的用法"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_reference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="参考资料"/>
+
+</LinearLayout>

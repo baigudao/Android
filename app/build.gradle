@@ -35,4 +35,7 @@ dependencies {
     // If you want to use the GPU Filters
     compile files('libs/gson-2.7.jar')
     compile files('libs/fastjson-1.1.56.android.jar')
+    compile project(':photoview')
+    //    compile project(':android-floating-action-button')
+    compile 'com.android.support:design:24.2.1'
 }
