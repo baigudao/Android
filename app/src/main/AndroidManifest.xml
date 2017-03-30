@@ -52,8 +52,15 @@
         <activity android:name=".frame.photoview.PhotoViewReferenceActivity" />
         <activity android:name=".frame.floatingactionbutton.MyFloatingActionButtonMainActivity" />
         <activity android:name=".frame.floatingactionbutton.FloatingActionButtonBaseUseActivity" />
-        <activity android:name=".GuideActivity"/>
-
+        <activity android:name=".GuideActivity" />
+        <activity android:name=".base.event.MyEventMainActivity" />
+        <activity android:name=".base.event.MotionEventActivity" />
+        <activity android:name=".other.utiltest.MyUtilTestMainActivity" />
+        <activity android:name=".other.utiltest.ImageFilterTestActivity" />
+        <activity android:name=".base.event.EventReferenceActivity" />
+        <activity android:name=".base.baseui.MyBaseUIMainActivity" />
+        <activity android:name=".base.baseui.button.ButtonMainActivity" />
+        <activity android:name=".base.baseui.button.ButtonBaseUseActivity"></activity>
     </application>
 
 </manifest>

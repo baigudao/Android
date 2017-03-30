@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_event_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jackie.android.base.event.MyEventMainActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <Button
+        android:id="@+id/btn_motion_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MotionEvent"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_key_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KeyEvent"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_reference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="参考资料"/>
+
+</LinearLayout>

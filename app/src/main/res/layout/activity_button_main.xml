@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_button_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jackie.android.base.baseui.button.ButtonMainActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <Button
+        android:id="@+id/btn_base_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button的基本使用"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_register_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册/登录"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>

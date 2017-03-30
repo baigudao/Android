@@ -5,16 +5,19 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import com.jackie.android.base.BaseAndroidFragment;
 import com.jackie.android.frame.CommonFrameFragment;
-import com.jackie.android.other.fragment.OtherFragment;
+import com.jackie.android.other.OtherFragment;
 import com.jackie.android.senior.SeniorAndroidFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends FragmentActivity {//这里注意：是继承自FragmentActivity
+
+    private TextView tv_title;
 
     private RadioGroup mRg_main;
     /**
@@ -46,7 +49,7 @@ public class MainActivity extends FragmentActivity {//这里注意：是继承�
     private void setListener() {
         mRg_main.setOnCheckedChangeListener(new MyOnCheckedChangeListener());
         //设置默认选中常用框架
-        mRg_main.check(R.id.rb_common_frame);
+        mRg_main.check(R.id.rb_base_android);
     }
 
     class MyOnCheckedChangeListener implements RadioGroup.OnCheckedChangeListener {
@@ -54,20 +57,25 @@ public class MainActivity extends FragmentActivity {//这里注意：是继承�
         @Override
         public void onCheckedChanged(RadioGroup group, int checkedId) {
             switch (checkedId) {
-                case R.id.rb_common_frame://常用框架
+                case R.id.rb_base_android://Android基础
                     position = 0;
+                    tv_title.setText("Android基础");
                     break;
-                case R.id.rb_third_party://第三方
+                case R.id.rb_senior_android://Android高级
                     position = 1;
+                    tv_title.setText("Android高级");
                     break;
-                case R.id.rb_custom://自定义
+                case R.id.rb_common_frame://常用框架
                     position = 2;
+                    tv_title.setText("常用框架");
                     break;
                 case R.id.rb_other://其他
                     position = 3;
+                    tv_title.setText("其他");
                     break;
                 default:
                     position = 0;
+                    tv_title.setText("Android基础");
                     break;
             }
             //根据位置得到对应的Fragment
@@ -128,6 +136,7 @@ public class MainActivity extends FragmentActivity {//这里注意：是继承�
 
     private void initView() {
         setContentView(R.layout.activity_main);
+        tv_title = (TextView)findViewById(R.id.tv_title);
         mRg_main = (RadioGroup) findViewById(R.id.rg_main);
     }
 }

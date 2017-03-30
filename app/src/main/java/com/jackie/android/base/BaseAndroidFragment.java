@@ -7,6 +7,8 @@ import android.widget.ListView;
 
 import com.jackie.android.BaseFragment;
 import com.jackie.android.R;
+import com.jackie.android.base.baseui.MyBaseUIMainActivity;
+import com.jackie.android.base.event.MyEventMainActivity;
 import com.jackie.android.base.listview.MyListViewMainActivity;
 import com.jackie.android.base.recyclerview.MyRecyclerViewMainActivity;
 import com.jackie.android.base.webview.MyWebViewMainActivity;
@@ -39,6 +41,10 @@ public class BaseAndroidFragment extends BaseFragment {
                     startActivity(new Intent(mContext, MyListViewMainActivity.class));
                 }else if (data.toLowerCase().equals("recyclerview")){
                     startActivity(new Intent(mContext, MyRecyclerViewMainActivity.class));
+                }else if (data.equals("UI基础组件")){
+                    startActivity(new Intent(mContext,MyBaseUIMainActivity.class));
+                }else if (data.equals("事件处理机制")){
+                    startActivity(new Intent(mContext,MyEventMainActivity.class));
                 }
             }
         });
@@ -49,7 +55,7 @@ public class BaseAndroidFragment extends BaseFragment {
     protected void initData() {
         super.initData();
         //准备数据
-        datas = new String[]{"ListView","RecyclerView","WebView",
+        datas = new String[]{"UI基础组件","ListView","RecyclerView","WebView","事件处理机制",
                 "....."};
         //设置适配器
         adapter = new BaseAndroidFragmentAdapter(mContext, datas);
