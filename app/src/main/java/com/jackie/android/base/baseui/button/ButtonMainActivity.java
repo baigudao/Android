@@ -36,6 +36,7 @@ public class ButtonMainActivity extends Activity implements View.OnClickListener
                 startActivity(new Intent(ButtonMainActivity.this,ButtonBaseUseActivity.class));
                 break;
             case R.id.btn_register_login:
+                startActivity(new Intent(ButtonMainActivity.this,ButtonRegisterAndLoginActivity.class));
                 Toast.makeText(this, "注册和登录", Toast.LENGTH_SHORT).show();
                 break;
             default:
