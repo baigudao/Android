@@ -1,14 +1,14 @@
 [
     {
-        "merged": "E:\\android-as-ws\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\indicator_arrow.png",
-        "source": "E:\\android-as-ws\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\drawable-mdpi-v4\\indicator_arrow.png"
+        "merged": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
     },
     {
-        "merged": "E:\\android-as-ws\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
-        "source": "E:\\android-as-ws\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
+        "merged": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
     },
     {
-        "merged": "E:\\android-as-ws\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
-        "source": "E:\\android-as-ws\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
+        "merged": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\drawable-mdpi-v4\\indicator_arrow.png"
     }
 ]

@@ -1,14 +1,14 @@
 [
     {
-        "merged": "E:\\android-as-ws\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\raw\\reset_sound.mp3",
-        "source": "E:\\android-as-ws\\Android\\Android-PullToRefresh-Sample\\src\\main\\res\\raw\\reset_sound.mp3"
+        "merged": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\raw\\refreshing_sound.mp3",
+        "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\src\\main\\res\\raw\\refreshing_sound.mp3"
     },
     {
-        "merged": "E:\\android-as-ws\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\raw\\refreshing_sound.mp3",
-        "source": "E:\\android-as-ws\\Android\\Android-PullToRefresh-Sample\\src\\main\\res\\raw\\refreshing_sound.mp3"
+        "merged": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\raw\\reset_sound.mp3",
+        "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\src\\main\\res\\raw\\reset_sound.mp3"
     },
     {
-        "merged": "E:\\android-as-ws\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\raw\\pull_event.mp3",
-        "source": "E:\\android-as-ws\\Android\\Android-PullToRefresh-Sample\\src\\main\\res\\raw\\pull_event.mp3"
+        "merged": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\raw\\pull_event.mp3",
+        "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\src\\main\\res\\raw\\pull_event.mp3"
     }
 ]
