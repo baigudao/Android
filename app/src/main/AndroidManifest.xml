@@ -60,7 +60,8 @@
         <activity android:name=".base.event.EventReferenceActivity" />
         <activity android:name=".base.baseui.MyBaseUIMainActivity" />
         <activity android:name=".base.baseui.button.ButtonMainActivity" />
-        <activity android:name=".base.baseui.button.ButtonBaseUseActivity"></activity>
+        <activity android:name=".base.baseui.button.ButtonBaseUseActivity" />
+        <activity android:name=".base.baseui.button.ButtonRegisterAndLoginActivity"></activity>
     </application>
 
 </manifest>
