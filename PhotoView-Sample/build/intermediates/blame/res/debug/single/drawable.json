@@ -80,12 +80,12 @@
         "source": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
-        "merged": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",

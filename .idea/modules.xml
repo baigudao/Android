@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android.iml" filepath="$PROJECT_DIR$/Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-ConvenientBanner-Sample/Android-ConvenientBanner-Sample.iml" filepath="$PROJECT_DIR$/Android-ConvenientBanner-Sample/Android-ConvenientBanner-Sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/Android-PullToRefresh-Sample/Android-PullToRefresh-Sample.iml" filepath="$PROJECT_DIR$/Android-PullToRefresh-Sample/Android-PullToRefresh-Sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/PhotoView-Sample/PhotoView-Sample.iml" filepath="$PROJECT_DIR$/PhotoView-Sample/PhotoView-Sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-convenientbanner/android-convenientbanner.iml" filepath="$PROJECT_DIR$/android-convenientbanner/android-convenientbanner.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-floating-action-button/android-floating-action-button.iml" filepath="$PROJECT_DIR$/android-floating-action-button/android-floating-action-button.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-floating-action-button-sample/android-floating-action-button-sample.iml" filepath="$PROJECT_DIR$/android-floating-action-button-sample/android-floating-action-button-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />

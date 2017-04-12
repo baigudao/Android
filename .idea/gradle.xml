@@ -8,8 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Android-ConvenientBanner-Sample" />
             <option value="$PROJECT_DIR$/Android-PullToRefresh-Sample" />
             <option value="$PROJECT_DIR$/PhotoView-Sample" />
+            <option value="$PROJECT_DIR$/android-convenientbanner" />
             <option value="$PROJECT_DIR$/android-floating-action-button" />
             <option value="$PROJECT_DIR$/android-floating-action-button-sample" />
             <option value="$PROJECT_DIR$/app" />
