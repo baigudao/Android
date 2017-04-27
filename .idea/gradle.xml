@@ -21,6 +21,8 @@
             <option value="$PROJECT_DIR$/pullToRefresh" />
             <option value="$PROJECT_DIR$/pullToRefreshListFragment" />
             <option value="$PROJECT_DIR$/pullToRefreshViewPager" />
+            <option value="$PROJECT_DIR$/sweet-alert-dialog-library" />
+            <option value="$PROJECT_DIR$/sweet-alert-dialog-sample" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

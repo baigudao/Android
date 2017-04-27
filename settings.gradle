@@ -1,4 +1,4 @@
-include ':app', ':PhotoView-Sample', ':photoview', ':android-floating-action-button-sample', ':android-floating-action-button', ':Android-ConvenientBanner-Sample', ':android-convenientbanner', ':banner', ':banner-sample'
+include ':app', ':PhotoView-Sample', ':photoview', ':android-floating-action-button-sample', ':android-floating-action-button', ':Android-ConvenientBanner-Sample', ':android-convenientbanner', ':banner', ':banner-sample', ':sweet-alert-dialog-sample', ':sweet-alert-dialog-library'
 include ':pullToRefresh'
 include ':pullToRefreshListFragment'
 include ':pullToRefreshViewPager'

@@ -4,12 +4,12 @@
         "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\anim\\slide_in_from_bottom.xml"
     },
     {
-        "merged": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_top.xml",
-        "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\anim\\slide_in_from_top.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_top.xml",
         "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\anim\\slide_out_to_top.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_top.xml",
+        "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\anim\\slide_in_from_top.xml"
     },
     {
         "merged": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_bottom.xml",
