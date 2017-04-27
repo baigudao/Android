@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+//version = VERSION_NAME
+//group = GROUP
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 24
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            proguardFile 'proguard-android.txt'
+            minifyEnabled true
+            shrinkResources true
+        }
+    }
+}
+
+dependencies {
+    //compile 'cn.pedant.sweetalert:library:1.3'
+    compile project(':sweet-alert-dialog-library')
+}
