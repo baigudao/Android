@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\android_workspace\\Android\\sweet-alert-dialog-sample\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w480dp-v13\\values-w480dp-v13.xml",
+        "outputFile": "E:\\android-as-ws\\Android\\sweet-alert-dialog-sample\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w480dp-v13\\values-w480dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 112
                 },
                 "from": {
-                    "file": "D:\\android_workspace\\Android\\sweet-alert-dialog-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-w480dp\\values.xml",
+                    "file": "E:\\android-as-ws\\Android\\sweet-alert-dialog-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-w480dp\\values.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 184
                 },
                 "from": {
-                    "file": "D:\\android_workspace\\Android\\sweet-alert-dialog-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-w480dp\\values.xml",
+                    "file": "E:\\android-as-ws\\Android\\sweet-alert-dialog-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-w480dp\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

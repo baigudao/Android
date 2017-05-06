@@ -1,14 +1,14 @@
 [
     {
-        "merged": "D:\\android_workspace\\Android\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
-        "source": "D:\\android_workspace\\Android\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\layout\\pull_to_refresh_header_vertical.xml"
+        "merged": "E:\\android-as-ws\\Android\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "E:\\android-as-ws\\Android\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\layout\\pull_to_refresh_header_horizontal.xml"
     },
     {
-        "merged": "D:\\android_workspace\\Android\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\debug\\layout\\need_this_for_maven.xml",
-        "source": "D:\\android_workspace\\Android\\pullToRefreshViewPager\\src\\main\\res\\layout\\need_this_for_maven.xml"
+        "merged": "E:\\android-as-ws\\Android\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "E:\\android-as-ws\\Android\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\layout\\pull_to_refresh_header_vertical.xml"
     },
     {
-        "merged": "D:\\android_workspace\\Android\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
-        "source": "D:\\android_workspace\\Android\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\Android\\pullToRefresh\\unspecified\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+        "merged": "E:\\android-as-ws\\Android\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\debug\\layout\\need_this_for_maven.xml",
+        "source": "E:\\android-as-ws\\Android\\pullToRefreshViewPager\\src\\main\\res\\layout\\need_this_for_maven.xml"
     }
 ]

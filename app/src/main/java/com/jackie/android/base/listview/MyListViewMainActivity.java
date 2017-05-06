@@ -74,6 +74,10 @@ public class MyListViewMainActivity extends Activity {
                     Toast.makeText(MyListViewMainActivity.this, "孙悟空", Toast.LENGTH_SHORT).show();
                 } else if (string.equals("猪八戒")) {
                     Toast.makeText(MyListViewMainActivity.this, "猪八戒", Toast.LENGTH_SHORT).show();
+                } else if (string.equals("唐僧")) {
+                    Toast.makeText(MyListViewMainActivity.this, "唐僧", Toast.LENGTH_SHORT).show();
+                } else if (string.equals("沙和尚")) {
+                    Toast.makeText(MyListViewMainActivity.this, "沙和尚", Toast.LENGTH_SHORT).show();
                 }
             }
         });
