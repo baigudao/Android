@@ -7,6 +7,7 @@ import android.widget.ListView;
 
 import com.jackie.android.BaseFragment;
 import com.jackie.android.R;
+import com.jackie.android.base.animation.MyAnimationMainActivity;
 import com.jackie.android.base.baseui.MyBaseUIMainActivity;
 import com.jackie.android.base.event.MyEventMainActivity;
 import com.jackie.android.base.listview.MyListViewMainActivity;
@@ -45,6 +46,8 @@ public class BaseAndroidFragment extends BaseFragment {
                     startActivity(new Intent(mContext,MyBaseUIMainActivity.class));
                 }else if (data.equals("事件处理机制")){
                     startActivity(new Intent(mContext,MyEventMainActivity.class));
+                }else if (data.equals("动画")){
+                    startActivity(new Intent(mContext, MyAnimationMainActivity.class));
                 }
             }
         });
@@ -55,7 +58,7 @@ public class BaseAndroidFragment extends BaseFragment {
     protected void initData() {
         super.initData();
         //准备数据
-        datas = new String[]{"UI基础组件","ListView","RecyclerView","WebView","事件处理机制",
+        datas = new String[]{"UI基础组件","ListView","RecyclerView","WebView","事件处理机制","动画",
                 "....."};
         //设置适配器
         adapter = new BaseAndroidFragmentAdapter(mContext, datas);

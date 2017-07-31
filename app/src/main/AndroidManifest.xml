@@ -61,7 +61,10 @@
         <activity android:name=".base.baseui.MyBaseUIMainActivity" />
         <activity android:name=".base.baseui.button.ButtonMainActivity" />
         <activity android:name=".base.baseui.button.ButtonBaseUseActivity" />
-        <activity android:name=".base.baseui.button.ButtonRegisterAndLoginActivity"></activity>
+        <activity android:name=".base.baseui.button.ButtonRegisterAndLoginActivity" />
+        <activity android:name=".base.animation.MyAnimationMainActivity" />
+        <activity android:name=".base.animation.view_animation.ScaleAnimationActivity" />
+        <activity android:name=".base.animation.view_animation.RotateAnimationActivity"></activity>
     </application>
 
 </manifest>
