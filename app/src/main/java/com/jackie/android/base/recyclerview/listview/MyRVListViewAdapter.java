@@ -4,9 +4,12 @@ import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.jackie.android.R;
+import com.jackie.android.bean.FuLiImageBean;
 
 import java.util.List;
 
@@ -18,12 +21,12 @@ import java.util.List;
 
 public class MyRVListViewAdapter extends RecyclerView.Adapter<MyRVListViewAdapter.MyViewHolder> {
 
+    private final List<FuLiImageBean.ResultsBean> results;
     private Context mContext;
-    private List<String> strings;
 
-    public MyRVListViewAdapter(Context context, List<String> strings) {//第一步，先调用这个构造方法
+    public MyRVListViewAdapter(MyRVListViewActivity context, List<FuLiImageBean.ResultsBean> results) {//第一步，先调用这个构造方法
         mContext = context;
-        this.strings = strings;
+        this.results = results;
     }
 
     /**
@@ -49,7 +52,11 @@ public class MyRVListViewAdapter extends RecyclerView.Adapter<MyRVListViewAdapte
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {//第五步，最后一步。
         //先根据位置得到数据，再设置item的数据
-        holder.tv_list_item.setText(strings.get(position));
+        Glide.with(mContext)
+                .load(results.get(position).getUrl())
+                .placeholder(R.drawable.jackie_chen)
+                .into(holder.iv);
+        holder.tv_list_item.setText(results.get(position).getWho());
     }
 
     /**
@@ -59,15 +66,17 @@ public class MyRVListViewAdapter extends RecyclerView.Adapter<MyRVListViewAdapte
      */
     @Override
     public int getItemCount() {//第二步
-        return strings.size();
+        return results == null ? 0 : results.size();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
+        private ImageView iv;
         private TextView tv_list_item;
 
         public MyViewHolder(final View itemView) {//第四步
             super(itemView);
+            iv = (ImageView) itemView.findViewById(R.id.iv);
             tv_list_item = (TextView) itemView.findViewById(R.id.tv_list_item);
 
             // 如果设置了回调，则设置点击事件

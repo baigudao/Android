@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.jackie.android.R;
 import com.jackie.android.base.recyclerview.flowview.MyRVFlowViewActivity;
@@ -22,6 +23,7 @@ public class MyRecyclerViewMainActivity extends Activity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_recycler_view_main);
+        ((TextView)findViewById(R.id.tv_title)).setText("RecyclerView");
 
         btn_recycler_list = (Button) findViewById(R.id.btn_recycler_list);
         btn_recycler_grid = (Button) findViewById(R.id.btn_recycler_grid);

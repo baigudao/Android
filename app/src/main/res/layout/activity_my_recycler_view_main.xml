@@ -7,6 +7,8 @@
     android:orientation="vertical"
     tools:context="com.jackie.android.base.recyclerview.MyRecyclerViewMainActivity">
 
+    <include layout="@layout/title_bar" />
+
     <Button
         android:id="@+id/btn_recycler_list"
         android:layout_width="match_parent"

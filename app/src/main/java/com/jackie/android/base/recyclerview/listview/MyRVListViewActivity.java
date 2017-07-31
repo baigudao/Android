@@ -9,11 +9,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
 import com.jackie.android.R;
 import com.jackie.android.base.recyclerview.utils.DividerItemDecoration;
+import com.jackie.android.bean.FuLiImageBean;
+import com.zhy.http.okhttp.OkHttpUtils;
+import com.zhy.http.okhttp.callback.StringCallback;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import okhttp3.Call;
 
 /**
  * RecyclerView总结:
@@ -32,6 +41,7 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
 
     private Button btn_add;
     private Button btn_remove;
+    private int mPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,11 +51,48 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
         recycler_view = (RecyclerView) findViewById(R.id.recycler_view);
         btn_add = (Button) findViewById(R.id.btn_add);
         btn_remove = (Button) findViewById(R.id.btn_remove);
+        btn_add.setOnClickListener(this);
+        btn_remove.setOnClickListener(this);
 
+        mPage = 1;
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        getDataFromNet();
+    }
+
+    private void getDataFromNet() {
+        OkHttpUtils.get()
+                .url("http://gank.io/api/data/福利/10/" + mPage)
+                .build()
+                .execute(new StringCallback() {
+                    @Override
+                    public void onError(Call call, Exception e, int id) {
+
+                    }
+
+                    @Override
+                    public void onResponse(String response, int id) {
+                        JSONObject jsonObject = null;
+                        try {
+                            jsonObject = new JSONObject(response);
+                            handleImageData(jsonObject);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
+    }
+
+    private void handleImageData(JSONObject jsonObject) {
+        Gson gson = new Gson();
         //准备数据
-        initData();
+        FuLiImageBean fuLiImageBean = gson.fromJson(jsonObject.toString(), FuLiImageBean.class);
+
         //定义adapter
-        adapter = new MyRVListViewAdapter(this, strings);
+        adapter = new MyRVListViewAdapter(this, fuLiImageBean.getResults());
         //设置适配器
         recycler_view.setAdapter(adapter);
         //设置布局管理器
@@ -59,6 +106,9 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
         //添加分割线
         recycler_view.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
 
+        //设置Item增加、移除动画
+        recycler_view.setItemAnimator(new DefaultItemAnimator());
+
         //设置点击事件
         adapter.setOnItemClickListener(new MyRVListViewAdapter.OnItemClickListener() {
             @Override
@@ -71,13 +121,6 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
                 Toast.makeText(MyRVListViewActivity.this, "长按事件" + position, Toast.LENGTH_SHORT).show();
             }
         });
-
-        btn_add.setOnClickListener(this);
-        btn_remove.setOnClickListener(this);
-
-        //设置Item增加、移除动画
-        recycler_view.setItemAnimator(new DefaultItemAnimator());
-
     }
 
     private void initData() {
