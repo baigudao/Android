@@ -42,6 +42,7 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
     private Button btn_remove;
     private int mPage;
     private SwipeRefreshLayout swipeRefreshLayout;
+    private int lastVisibleItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,16 +58,36 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
 
 
         recycler_view = (RecyclerView) findViewById(R.id.recycler_view);
+        //设置布局管理器
+        final LinearLayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        /**
+         * 1，上下文
+         * 2，布局方向
+         * 3，是否倒序排列
+         */
+        recycler_view.setLayoutManager(mLayoutManager);
+
+        //添加分割线
+        recycler_view.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
+
+        //设置Item增加、移除动画
+        recycler_view.setItemAnimator(new DefaultItemAnimator());
         //设置加载更多
         recycler_view.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
+                //获取加载的最后一个可见视图在适配器的位置。
+                lastVisibleItem = mLayoutManager.findLastVisibleItemPosition();
             }
 
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
+                if (newState == RecyclerView.SCROLL_STATE_IDLE && lastVisibleItem + 2 >= mLayoutManager.getItemCount()) {
+                    ++mPage;
+                    getDataFromNet();
+                }
             }
         });
 //        btn_add = (Button) findViewById(R.id.btn_add);
@@ -116,19 +137,6 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
         adapter = new MyRVListViewAdapter(this, fuLiImageBean.getResults());
         //设置适配器
         recycler_view.setAdapter(adapter);
-        //设置布局管理器
-        /**
-         * 1，上下文
-         * 2，布局方向
-         * 3，是否倒序排列
-         */
-        recycler_view.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-
-        //添加分割线
-        recycler_view.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
-
-        //设置Item增加、移除动画
-        recycler_view.setItemAnimator(new DefaultItemAnimator());
 
         //设置点击事件
         adapter.setOnItemClickListener(new MyRVListViewAdapter.OnItemClickListener() {
