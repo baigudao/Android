@@ -2,11 +2,14 @@ package com.jackie.android.base.recyclerview.listview;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -19,9 +22,6 @@ import com.zhy.http.okhttp.callback.StringCallback;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import okhttp3.Call;
 
 /**
@@ -33,26 +33,46 @@ import okhttp3.Call;
  * 5，添加和移除数据
  * 6，设置添加和移除动画
  */
-public class MyRVListViewActivity extends Activity implements View.OnClickListener {
+public class MyRVListViewActivity extends Activity implements View.OnClickListener, SwipeRefreshLayout.OnRefreshListener {
 
     private RecyclerView recycler_view;
-    private List<String> strings = new ArrayList<>();
     private MyRVListViewAdapter adapter;
 
     private Button btn_add;
     private Button btn_remove;
     private int mPage;
+    private SwipeRefreshLayout swipeRefreshLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_rvlist_view);
+        ((TextView) findViewById(R.id.tv_title)).setText("ListView的效果");
+
+        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.grid_swipe_refresh);
+        //调整SwipeRefreshLayout的位置
+        swipeRefreshLayout.setProgressViewOffset(false, 0, (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 24, getResources().getDisplayMetrics()));
+        //设置SwipeRefreshLayout的刷新监听器
+        swipeRefreshLayout.setOnRefreshListener(this);
+
 
         recycler_view = (RecyclerView) findViewById(R.id.recycler_view);
-        btn_add = (Button) findViewById(R.id.btn_add);
-        btn_remove = (Button) findViewById(R.id.btn_remove);
-        btn_add.setOnClickListener(this);
-        btn_remove.setOnClickListener(this);
+        //设置加载更多
+        recycler_view.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+            }
+
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+            }
+        });
+//        btn_add = (Button) findViewById(R.id.btn_add);
+//        btn_remove = (Button) findViewById(R.id.btn_remove);
+//        btn_add.setOnClickListener(this);
+//        btn_remove.setOnClickListener(this);
 
         mPage = 1;
     }
@@ -79,6 +99,7 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
                         try {
                             jsonObject = new JSONObject(response);
                             handleImageData(jsonObject);
+                            swipeRefreshLayout.setRefreshing(false);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -123,26 +144,27 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
         });
     }
 
-    private void initData() {
-        for (int i = 0; i < 100; i++) {
-            strings.add("我厉害吧！ " + i);
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+//            case R.id.btn_add:
+//                strings.add(0, "新增的数据");
+//                adapter.notifyItemInserted(0);
+//                //设置回滚到新增的item项
+//                recycler_view.scrollToPosition(0);
+//                break;
+//            case R.id.btn_remove:
+//                adapter.notifyItemRemoved(0);
+//                break;
+            default:
+                break;
         }
     }
 
     @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btn_add:
-                strings.add(0, "新增的数据");
-                adapter.notifyItemInserted(0);
-                //设置回滚到新增的item项
-                recycler_view.scrollToPosition(0);
-                break;
-            case R.id.btn_remove:
-                adapter.notifyItemRemoved(0);
-                break;
-            default:
-                break;
-        }
+    public void onRefresh() {
+        swipeRefreshLayout.setRefreshing(true);
+        mPage = 1;
+        getDataFromNet();
     }
 }
