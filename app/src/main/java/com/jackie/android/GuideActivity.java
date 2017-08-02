@@ -20,7 +20,6 @@ import java.util.ArrayList;
 
 public class GuideActivity extends Activity {
 
-    private ViewPager view_pager;
     private Button btn_start_main;
     private LinearLayout ll_point_group;
     private ImageView iv_red_point;
@@ -29,30 +28,28 @@ public class GuideActivity extends Activity {
 
     //准备数据
     private int[] ids = new int[]{
-            R.drawable.guide1,
-            R.drawable.guide2,
-            R.drawable.guide3,
-            R.drawable.guide4
+            R.drawable.guide_1,
+            R.drawable.guide_2,
+            R.drawable.guide_3,
+            R.drawable.guide_4
     };
 
     /**
      * 两点的间距
      */
-    private int leftmax;
-
-    private int widthdpi;
+    private int leftMax;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guide);
 
-        view_pager = (ViewPager) findViewById(R.id.view_pager);
+        ViewPager view_pager = (ViewPager) findViewById(R.id.view_pager);
         btn_start_main = (Button) findViewById(R.id.btn_start_main);
         ll_point_group = (LinearLayout) findViewById(R.id.ll_point_group);
         iv_red_point = (ImageView) findViewById(R.id.iv_red_point);
 
-        widthdpi = DensityUtil.dip2px(this, 10);
+        int width_dpi = DensityUtil.dip2px(this, 10);
         imageViews = new ArrayList<>();
         for (int i = 0; i < ids.length; i++) {
             ImageView imageView = new ImageView(this);
@@ -69,10 +66,10 @@ public class GuideActivity extends Activity {
              * 单位是像数
              * 把单位当成dp转成对应的像数
              */
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(widthdpi, widthdpi);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(width_dpi, width_dpi);
             if (i != 0) {
                 //不包括第0个，所有的点距离左边有10个像数
-                params.leftMargin = widthdpi;
+                params.leftMargin = width_dpi;
             }
             point.setLayoutParams(params);
             //添加到线性布局里面
@@ -120,12 +117,12 @@ public class GuideActivity extends Activity {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-            //两点间移动的距离 = 屏幕滑动百分比 * 间距
-//            int leftMargin = (int) (positionOffset * leftmax);
-//            Log.e(TAG,"position=="+position+",positionOffset=="+positionOffset+",positionOffsetPixels=="+positionOffsetPixels);
+            //            两点间移动的距离 = 屏幕滑动百分比 * 间距
+            //            int leftMargin = (int) (positionOffset * leftmax);
+            //            Log.e(TAG,"position=="+position+",positionOffset=="+positionOffset+",positionOffsetPixels=="+positionOffsetPixels);
 
             //两点间滑动距离对应的坐标 = 原来的起始位置 +  两点间移动的距离
-            int leftMargin = (int) (position * leftmax + (positionOffset * leftmax));
+            int leftMargin = (int) (position * leftMax + (positionOffset * leftMax));
             //params.leftMargin = 两点间滑动距离对应的坐标
 
             RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) iv_red_point.getLayoutParams();
@@ -166,8 +163,8 @@ public class GuideActivity extends Activity {
             //执行不只一次
             iv_red_point.getViewTreeObserver().removeGlobalOnLayoutListener(MyOnGlobalLayoutListener.this);
 
-//            间距  = 第1个点距离左边的距离 - 第0个点距离左边的距离
-            leftmax = ll_point_group.getChildAt(1).getLeft() - ll_point_group.getChildAt(0).getLeft();
+            //            间距  = 第1个点距离左边的距离 - 第0个点距离左边的距离
+            leftMax = ll_point_group.getChildAt(1).getLeft() - ll_point_group.getChildAt(0).getLeft();
         }
     }
 

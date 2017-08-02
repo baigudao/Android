@@ -7,7 +7,6 @@ import android.widget.ListView;
 
 import com.jackie.android.BaseFragment;
 import com.jackie.android.R;
-import com.jackie.android.base.animation.MyAnimationMainActivity;
 import com.jackie.android.base.baseui.MyBaseUIMainActivity;
 import com.jackie.android.base.event.MyEventMainActivity;
 import com.jackie.android.base.listview.MyListViewMainActivity;
@@ -36,18 +35,18 @@ public class BaseAndroidFragment extends BaseFragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String data = datas[position];
-                if (data.toLowerCase().equals("webview")){
-                    startActivity(new Intent(mContext,MyWebViewMainActivity.class));
-                }else if (data.toLowerCase().equals("listview")){
+                if (data.toLowerCase().equals("webview")) {
+                    startActivity(new Intent(mContext, MyWebViewMainActivity.class));
+                } else if (data.toLowerCase().equals("listview")) {
                     startActivity(new Intent(mContext, MyListViewMainActivity.class));
-                }else if (data.toLowerCase().equals("recyclerview")){
+                } else if (data.toLowerCase().equals("recyclerview")) {
                     startActivity(new Intent(mContext, MyRecyclerViewMainActivity.class));
-                }else if (data.equals("UI基础组件")){
-                    startActivity(new Intent(mContext,MyBaseUIMainActivity.class));
-                }else if (data.equals("事件处理机制")){
-                    startActivity(new Intent(mContext,MyEventMainActivity.class));
-                }else if (data.equals("动画")){
-                    startActivity(new Intent(mContext, MyAnimationMainActivity.class));
+                } else if (data.equals("UI基础组件")) {
+                    startActivity(new Intent(mContext, MyBaseUIMainActivity.class));
+                } else if (data.equals("事件处理机制")) {
+                    startActivity(new Intent(mContext, MyEventMainActivity.class));
+                } else if (data.equals("动画")) {
+                    //                    startActivity(new Intent(mContext, MyAnimationMainActivity.class));
                 }
             }
         });
@@ -58,7 +57,7 @@ public class BaseAndroidFragment extends BaseFragment {
     protected void initData() {
         super.initData();
         //准备数据
-        datas = new String[]{"UI基础组件","ListView","RecyclerView","WebView","事件处理机制","动画",
+        datas = new String[]{"UI基础组件", "ListView", "RecyclerView", "WebView", "事件处理机制", "动画",
                 "....."};
         //设置适配器
         adapter = new BaseAndroidFragmentAdapter(mContext, datas);

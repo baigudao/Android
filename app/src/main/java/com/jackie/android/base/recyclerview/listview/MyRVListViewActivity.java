@@ -59,21 +59,16 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
 
         recycler_view = (RecyclerView) findViewById(R.id.recycler_view);
         //设置布局管理器
-        final LinearLayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        /**
-         * 1，上下文
-         * 2，布局方向
-         * 3，是否倒序排列
-         */
+        final LinearLayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);//1，上下文;2，布局方向;3，是否倒序排列
         recycler_view.setLayoutManager(mLayoutManager);
-
         //添加分割线
         recycler_view.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
-
         //设置Item增加、移除动画
         recycler_view.setItemAnimator(new DefaultItemAnimator());
+
         //设置加载更多
         recycler_view.addOnScrollListener(new RecyclerView.OnScrollListener() {
+
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
@@ -90,10 +85,10 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
                 }
             }
         });
-//        btn_add = (Button) findViewById(R.id.btn_add);
-//        btn_remove = (Button) findViewById(R.id.btn_remove);
-//        btn_add.setOnClickListener(this);
-//        btn_remove.setOnClickListener(this);
+        //        btn_add = (Button) findViewById(R.id.btn_add);
+        //        btn_remove = (Button) findViewById(R.id.btn_remove);
+        //        btn_add.setOnClickListener(this);
+        //        btn_remove.setOnClickListener(this);
 
         mPage = 1;
     }
@@ -140,6 +135,7 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
 
         //设置点击事件
         adapter.setOnItemClickListener(new MyRVListViewAdapter.OnItemClickListener() {
+
             @Override
             public void onItemClick(View view, int position) {
                 Toast.makeText(MyRVListViewActivity.this, "点击事件" + position, Toast.LENGTH_SHORT).show();
@@ -149,21 +145,22 @@ public class MyRVListViewActivity extends Activity implements View.OnClickListen
             public void onItemLongClick(View view, int position) {
                 Toast.makeText(MyRVListViewActivity.this, "长按事件" + position, Toast.LENGTH_SHORT).show();
             }
+
         });
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-//            case R.id.btn_add:
-//                strings.add(0, "新增的数据");
-//                adapter.notifyItemInserted(0);
-//                //设置回滚到新增的item项
-//                recycler_view.scrollToPosition(0);
-//                break;
-//            case R.id.btn_remove:
-//                adapter.notifyItemRemoved(0);
-//                break;
+            //            case R.id.btn_add:
+            //                strings.add(0, "新增的数据");
+            //                adapter.notifyItemInserted(0);
+            //                //设置回滚到新增的item项
+            //                recycler_view.scrollToPosition(0);
+            //                break;
+            //            case R.id.btn_remove:
+            //                adapter.notifyItemRemoved(0);
+            //                break;
             default:
                 break;
         }

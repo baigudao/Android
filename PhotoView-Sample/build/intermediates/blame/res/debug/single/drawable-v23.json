@@ -2,5 +2,9 @@
     {
         "merged": "E:\\android-as-ws\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
         "source": "E:\\android-as-ws\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-v23\\abc_control_background_material.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-v23\\abc_control_background_material.xml"
     }
 ]
