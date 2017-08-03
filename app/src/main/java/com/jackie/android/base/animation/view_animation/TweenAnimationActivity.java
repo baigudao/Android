@@ -2,31 +2,34 @@ package com.jackie.android.base.animation.view_animation;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
-import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jackie.android.R;
 
-public class ScaleAnimationActivity extends AppCompatActivity {
+/**
+ * 补间动画
+ */
+public class TweenAnimationActivity extends AppCompatActivity {
 
-    private ImageView iv_test;
+//    private ImageView iv_test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scale_animation);
+        setContentView(R.layout.activity_tween_animation);
+        ((TextView) findViewById(R.id.tv_title)).setText("补间动画");
 
-        iv_test = (ImageView) findViewById(R.id.iv_test);
+//        iv_test = (ImageView) findViewById(iv_test);
 
-        findViewById(R.id.btn_start).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                scaleImage();
-            }
-        });
+//        findViewById(R.id.btn_start).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                scaleImage();
+//            }
+//        });
     }
 
     private void scaleImage() {
@@ -38,12 +41,12 @@ public class ScaleAnimationActivity extends AppCompatActivity {
         scaleAnimation.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
-                Toast.makeText(ScaleAnimationActivity.this, "缩放开始了", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TweenAnimationActivity.this, "缩放开始了", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                Toast.makeText(ScaleAnimationActivity.this, "缩放结束了", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TweenAnimationActivity.this, "缩放结束了", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -51,6 +54,6 @@ public class ScaleAnimationActivity extends AppCompatActivity {
 
             }
         });
-        iv_test.startAnimation(scaleAnimation);
+//        iv_test.startAnimation(scaleAnimation);
     }
 }
