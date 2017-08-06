@@ -7,6 +7,7 @@ import android.widget.ListView;
 
 import com.jackie.android.BaseFragment;
 import com.jackie.android.R;
+import com.jackie.android.base.animation.MyAnimationMainActivity;
 import com.jackie.android.base.baseui.MyBaseUIMainActivity;
 import com.jackie.android.base.event.MyEventMainActivity;
 import com.jackie.android.base.listview.MyListViewMainActivity;
@@ -46,7 +47,7 @@ public class BaseAndroidFragment extends BaseFragment {
                 } else if (data.equals("事件处理机制")) {
                     startActivity(new Intent(mContext, MyEventMainActivity.class));
                 } else if (data.equals("动画")) {
-                    //                    startActivity(new Intent(mContext, MyAnimationMainActivity.class));
+                    startActivity(new Intent(mContext, MyAnimationMainActivity.class));
                 }
             }
         });

@@ -13,7 +13,24 @@
         android:id="@+id/btn_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="Button"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="SearchView"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="对话框"
         android:textAllCaps="false" />
 
 </LinearLayout>

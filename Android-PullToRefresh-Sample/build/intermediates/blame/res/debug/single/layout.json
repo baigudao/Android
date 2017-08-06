@@ -28,12 +28,12 @@
         "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\src\\main\\res\\layout\\activity_ptr_list.xml"
     },
     {
-        "merged": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ptr_grid.xml",
-        "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\src\\main\\res\\layout\\activity_ptr_grid.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ptr_webview.xml",
         "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\src\\main\\res\\layout\\activity_ptr_webview.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ptr_grid.xml",
+        "source": "D:\\android_workspace\\Android\\Android-PullToRefresh-Sample\\src\\main\\res\\layout\\activity_ptr_grid.xml"
     },
     {
         "merged": "E:\\android-as-ws\\Android\\Android-PullToRefresh-Sample\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ptr_scrollview.xml",

@@ -52,24 +52,24 @@
         "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
         "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\alert_dialog.xml",

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "E:\\android-as-ws\\Android\\sweet-alert-dialog-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
-        "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable-xxhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
-    },
-    {
         "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable-xxhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "E:\\android-as-ws\\Android\\sweet-alert-dialog-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable-xxhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
     },
     {
         "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_ab_share_pack_holo_light.9.png",

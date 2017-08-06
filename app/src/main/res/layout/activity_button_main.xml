@@ -13,6 +13,7 @@
         android:id="@+id/btn_base_use"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="Button的基本使用"
         android:textAllCaps="false" />
 
@@ -20,6 +21,7 @@
         android:id="@+id/btn_register_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="注册/登录"
         android:textAllCaps="false" />
 

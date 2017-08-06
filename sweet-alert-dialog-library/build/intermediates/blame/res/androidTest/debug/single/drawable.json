@@ -8,12 +8,12 @@
         "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\bundles\\debug\\res\\drawable\\gray_button_background.xml"
     },
     {
-        "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\error_circle.xml",
         "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\bundles\\debug\\res\\drawable\\error_circle.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
         "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\blue_button_background.xml",
@@ -44,28 +44,28 @@
         "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\bundles\\debug\\res\\drawable\\red_button_background.xml"
     },
     {
-        "merged": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_item_background_holo_light.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\error_center_x.xml",
         "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\bundles\\debug\\res\\drawable\\error_center_x.xml"
+    },
+    {
+        "merged": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
         "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\gray_button_background.xml",
         "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\bundles\\debug\\res\\drawable\\gray_button_background.xml"
     },
     {
-        "merged": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
         "merged": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_top_material.xml",
         "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
         "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",

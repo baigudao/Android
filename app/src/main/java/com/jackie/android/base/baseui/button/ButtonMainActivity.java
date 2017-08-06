@@ -22,7 +22,7 @@ public class ButtonMainActivity extends Activity implements View.OnClickListener
         setContentView(R.layout.activity_button_main);
 
         tv_title = (TextView)findViewById(R.id.tv_title);
-        tv_title.setText("Button");
+        tv_title.setText("Button的使用");
         btn_base_use = (Button)findViewById(R.id.btn_base_use);
         btn_register_login = (Button)findViewById(R.id.btn_register_login);
         btn_base_use.setOnClickListener(this);

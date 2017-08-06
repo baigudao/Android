@@ -52,12 +52,12 @@
         "source": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\src\\main\\res\\drawable\\error_circle.xml"
     },
     {
-        "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\debug\\drawable\\warning_circle.xml",
-        "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\src\\main\\res\\drawable\\warning_circle.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\debug\\drawable\\gray_button_background.xml",
         "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\src\\main\\res\\drawable\\gray_button_background.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\debug\\drawable\\warning_circle.xml",
+        "source": "D:\\android_workspace\\Android\\sweet-alert-dialog-library\\src\\main\\res\\drawable\\warning_circle.xml"
     },
     {
         "merged": "E:\\android-as-ws\\Android\\sweet-alert-dialog-library\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
