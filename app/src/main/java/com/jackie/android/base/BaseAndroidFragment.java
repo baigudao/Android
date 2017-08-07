@@ -10,7 +10,7 @@ import com.jackie.android.R;
 import com.jackie.android.base.animation.MyAnimationMainActivity;
 import com.jackie.android.base.baseui.MyBaseUIMainActivity;
 import com.jackie.android.base.event.MyEventMainActivity;
-import com.jackie.android.base.listview.MyListViewMainActivity;
+import com.jackie.android.base.listview.ListViewMainActivity;
 import com.jackie.android.base.recyclerview.MyRecyclerViewMainActivity;
 import com.jackie.android.base.webview.MyWebViewMainActivity;
 
@@ -39,7 +39,7 @@ public class BaseAndroidFragment extends BaseFragment {
                 if (data.toLowerCase().equals("webview")) {
                     startActivity(new Intent(mContext, MyWebViewMainActivity.class));
                 } else if (data.toLowerCase().equals("listview")) {
-                    startActivity(new Intent(mContext, MyListViewMainActivity.class));
+                    startActivity(new Intent(mContext, ListViewMainActivity.class));
                 } else if (data.toLowerCase().equals("recyclerview")) {
                     startActivity(new Intent(mContext, MyRecyclerViewMainActivity.class));
                 } else if (data.equals("UI基础组件")) {

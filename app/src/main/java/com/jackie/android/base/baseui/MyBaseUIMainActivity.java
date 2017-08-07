@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import com.jackie.android.R;
 import com.jackie.android.base.baseui.button.ButtonMainActivity;
+import com.jackie.android.base.baseui.calendarview.CalendarViewMainActivity;
+import com.jackie.android.base.baseui.calendarview.DateAndTimePickerMainActivity;
 import com.jackie.android.base.baseui.dialog.DialogMainActivity;
 import com.jackie.android.base.baseui.searchview.SearchViewMainActivity;
 
@@ -22,6 +24,8 @@ public class MyBaseUIMainActivity extends Activity implements View.OnClickListen
         findViewById(R.id.btn_button).setOnClickListener(this);
         findViewById(R.id.btn_searchView).setOnClickListener(this);
         findViewById(R.id.btn_dialog).setOnClickListener(this);
+        findViewById(R.id.btn_calendarView).setOnClickListener(this);
+        findViewById(R.id.btn_dateAndTimePicker).setOnClickListener(this);
     }
 
     @Override
@@ -35,6 +39,12 @@ public class MyBaseUIMainActivity extends Activity implements View.OnClickListen
                 break;
             case R.id.btn_dialog:
                 startActivity(new Intent(MyBaseUIMainActivity.this, DialogMainActivity.class));
+                break;
+            case R.id.btn_calendarView:
+                startActivity(new Intent(MyBaseUIMainActivity.this, CalendarViewMainActivity.class));
+                break;
+            case R.id.btn_dateAndTimePicker:
+                startActivity(new Intent(MyBaseUIMainActivity.this, DateAndTimePickerMainActivity.class));
                 break;
             default:
                 break;

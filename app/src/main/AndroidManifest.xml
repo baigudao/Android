@@ -3,6 +3,7 @@
     package="com.jackie.android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:name=".BaseApplication"
@@ -24,7 +25,7 @@
         <activity android:name=".base.webview.MyWebViewMainActivity" />
         <activity android:name=".base.webview.BiBiCarMallWebsiteActivity" />
         <activity android:name=".base.webview.WebViewReferenceActivity" />
-        <activity android:name=".base.listview.MyListViewMainActivity" />
+        <activity android:name=".base.listview.ListViewBaseUseActivity" />
         <activity android:name=".base.recyclerview.MyRecyclerViewMainActivity" />
         <activity
             android:name=".base.recyclerview.listview.MyRVListViewActivity"
@@ -68,7 +69,11 @@
         <activity android:name=".base.animation.DrawableAnimationActivity" />
         <activity android:name=".base.baseui.searchview.SearchViewMainActivity" />
         <activity android:name=".base.baseui.dialog.DialogMainActivity" />
-        <activity android:name=".base.baseui.dialog.PopupWindowActivity"></activity>
+        <activity android:name=".base.baseui.dialog.PopupWindowActivity" />
+        <activity android:name=".base.baseui.calendarview.CalendarViewMainActivity" />
+        <activity android:name=".base.baseui.calendarview.DateAndTimePickerMainActivity" />
+        <activity android:name=".base.listview.ListViewMainActivity" />
+        <activity android:name=".base.listview.ListViewWrapperActivity"></activity>
     </application>
 
 </manifest>

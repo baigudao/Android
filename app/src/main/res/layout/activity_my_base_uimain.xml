@@ -26,6 +26,22 @@
         android:textAllCaps="false" />
 
     <Button
+        android:id="@+id/btn_calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="CalendarView"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_dateAndTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="DateAndTimePicker"
+        android:textAllCaps="false" />
+
+    <Button
         android:id="@+id/btn_dialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
