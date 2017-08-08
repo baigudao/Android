@@ -18,7 +18,7 @@ public class MyBaseUIMainActivity extends Activity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_base_uimain);
+        setContentView(R.layout.activity_base_uimain);
         ((TextView) findViewById(R.id.tv_title)).setText("UI基本组件");
 
         findViewById(R.id.btn_button).setOnClickListener(this);

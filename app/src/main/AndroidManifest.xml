@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jackie.android">
+          package="com.jackie.android">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
@@ -12,68 +12,80 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".frame.rongcloud.activity.MyRongCloudIMMainActivity" />
-        <activity android:name=".senior.view.activity.MyViewMainActivity" />
-        <activity android:name=".base.webview.MyWebViewMainActivity" />
-        <activity android:name=".base.webview.BiBiCarMallWebsiteActivity" />
-        <activity android:name=".base.webview.WebViewReferenceActivity" />
-        <activity android:name=".base.listview.ListViewBaseUseActivity" />
-        <activity android:name=".base.recyclerview.MyRecyclerViewMainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".frame.rongcloud.activity.MyRongCloudIMMainActivity"/>
+        <activity android:name=".senior.view.activity.MyViewMainActivity"/>
+        <activity android:name=".base.webview.WebViewMainActivity"/>
+        <activity android:name=".base.webview.BiBiCarMallWebsiteActivity"/>
+        <activity android:name=".base.webview.WebViewReferenceActivity"/>
+        <activity android:name=".base.listview.ListViewBaseUseActivity"/>
+        <activity android:name=".base.recyclerview.MyRecyclerViewMainActivity"/>
         <activity
             android:name=".base.recyclerview.listview.MyRVListViewActivity"
-            android:theme="@style/listDividerTheme" />
-        <activity android:name=".base.recyclerview.gridview.MyRVGridViewActivity" />
-        <activity android:name=".base.recyclerview.flowview.MyRVFlowViewActivity" />
-        <activity android:name=".base.recyclerview.RecyclerViewReferenceActivity" />
-        <activity android:name=".frame.pulltorefresh.MyPullToRefreshMainActivity" />
-        <activity android:name=".frame.pulltorefresh.PullToRefreshListViewActivity" />
-        <activity android:name=".frame.pulltorefresh.PullToRefreshGridViewActivity" />
-        <activity android:name=".frame.pulltorefresh.PullToRefreshWebViewActivity" />
-        <activity android:name=".frame.pulltorefresh.PullToRefreshScrollViewActivity" />
-        <activity android:name=".frame.pulltorefresh.PullToRefreshReferenceActivity" />
-        <activity android:name=".frame.glide.MyGlideMainActivity" />
-        <activity android:name=".frame.glide.GlideBaseUseActivity" />
-        <activity android:name=".frame.glide.GlideRecyclerViewActivity" />
-        <activity android:name=".frame.glide.GlideTransformationActivity" />
-        <activity android:name=".frame.glide.GlideReferenceActivity" />
-        <activity android:name=".frame.jsonparse.MyJSONParseMainActivity" />
-        <activity android:name=".frame.jsonparse.JSONParseByNativeActivity" />
-        <activity android:name=".frame.jsonparse.JSONParseByGSONActivity" />
-        <activity android:name=".frame.jsonparse.JSONParseByFastJsonActivity" />
-        <activity android:name=".frame.photoview.MyPhotoViewMainActivity" />
-        <activity android:name=".frame.photoview.PhotoViewBaseUseActivity" />
-        <activity android:name=".frame.photoview.PhotoViewViewPagerActivity" />
-        <activity android:name=".frame.photoview.PhotoViewReferenceActivity" />
-        <activity android:name=".frame.floatingactionbutton.MyFloatingActionButtonMainActivity" />
-        <activity android:name=".frame.floatingactionbutton.FloatingActionButtonBaseUseActivity" />
-        <activity android:name=".GuideActivity" />
-        <activity android:name=".base.event.MyEventMainActivity" />
-        <activity android:name=".base.event.MotionEventActivity" />
-        <activity android:name=".other.utiltest.MyUtilTestMainActivity" />
-        <activity android:name=".other.utiltest.ImageFilterTestActivity" />
-        <activity android:name=".base.event.EventReferenceActivity" />
-        <activity android:name=".base.baseui.MyBaseUIMainActivity" />
-        <activity android:name=".base.baseui.button.ButtonMainActivity" />
-        <activity android:name=".base.baseui.button.ButtonBaseUseActivity" />
-        <activity android:name=".base.baseui.button.ButtonRegisterAndLoginActivity" />
-        <activity android:name=".base.animation.MyAnimationMainActivity" />
-        <activity android:name=".base.animation.TweenAnimationActivity" />
-        <activity android:name=".base.animation.DrawableAnimationActivity" />
-        <activity android:name=".base.baseui.searchview.SearchViewMainActivity" />
-        <activity android:name=".base.baseui.dialog.DialogMainActivity" />
-        <activity android:name=".base.baseui.dialog.PopupWindowActivity" />
-        <activity android:name=".base.baseui.calendarview.CalendarViewMainActivity" />
-        <activity android:name=".base.baseui.calendarview.DateAndTimePickerMainActivity" />
-        <activity android:name=".base.listview.ListViewMainActivity" />
-        <activity android:name=".base.listview.ListViewWrapperActivity"></activity>
+            android:theme="@style/listDividerTheme"/>
+        <activity android:name=".base.recyclerview.gridview.MyRVGridViewActivity"/>
+        <activity android:name=".base.recyclerview.flowview.MyRVFlowViewActivity"/>
+        <activity android:name=".base.recyclerview.RecyclerViewReferenceActivity"/>
+        <activity android:name=".frame.pulltorefresh.PullToRefreshMainActivity"/>
+        <activity android:name=".frame.pulltorefresh.PullToRefreshListViewActivity"/>
+        <activity android:name=".frame.pulltorefresh.PullToRefreshGridViewActivity"/>
+        <activity android:name=".frame.pulltorefresh.PullToRefreshWebViewActivity"/>
+        <activity android:name=".frame.pulltorefresh.PullToRefreshScrollViewActivity"/>
+        <activity android:name=".frame.pulltorefresh.PullToRefreshReferenceActivity"/>
+        <activity android:name=".frame.glide.GlideMainActivity"/>
+        <activity android:name=".frame.glide.GlideBaseUseActivity"/>
+        <activity android:name=".frame.glide.GlideRecyclerViewActivity"/>
+        <activity android:name=".frame.glide.GlideTransformationActivity"/>
+        <activity android:name=".frame.glide.GlideReferenceActivity"/>
+        <activity android:name=".frame.jsonparse.JSONParseMainActivity"/>
+        <activity android:name=".frame.jsonparse.JSONParseByNativeActivity"/>
+        <activity android:name=".frame.jsonparse.JSONParseByGSONActivity"/>
+        <activity android:name=".frame.jsonparse.JSONParseByFastJsonActivity"/>
+        <activity android:name=".frame.photoview.PhotoViewMainActivity"/>
+        <activity android:name=".frame.photoview.PhotoViewBaseUseActivity"/>
+        <activity android:name=".frame.photoview.PhotoViewViewPagerActivity"/>
+        <activity android:name=".frame.photoview.PhotoViewReferenceActivity"/>
+        <activity android:name=".frame.floatingactionbutton.MyFloatingActionButtonMainActivity"/>
+        <activity android:name=".frame.floatingactionbutton.FloatingActionButtonBaseUseActivity"/>
+        <activity android:name=".GuideActivity"/>
+        <activity android:name=".base.event.EventMainActivity"/>
+        <activity android:name=".base.event.MotionEventActivity"/>
+        <activity android:name=".other.utiltest.MyUtilTestMainActivity"/>
+        <activity android:name=".other.utiltest.ImageFilterTestActivity"/>
+        <activity android:name=".base.event.EventReferenceActivity"/>
+        <activity android:name=".base.baseui.MyBaseUIMainActivity"/>
+        <activity android:name=".base.baseui.button.ButtonMainActivity"/>
+        <activity android:name=".base.baseui.button.ButtonBaseUseActivity"/>
+        <activity android:name=".base.baseui.button.ButtonRegisterAndLoginActivity"/>
+        <activity android:name=".base.animation.MyAnimationMainActivity"/>
+        <activity android:name=".base.animation.TweenAnimationActivity"/>
+        <activity android:name=".base.animation.DrawableAnimationActivity"/>
+        <activity android:name=".base.baseui.searchview.SearchViewMainActivity"/>
+        <activity android:name=".base.baseui.dialog.DialogMainActivity"/>
+        <activity android:name=".base.baseui.dialog.PopupWindowActivity"/>
+        <activity android:name=".base.baseui.calendarview.CalendarViewMainActivity"/>
+        <activity android:name=".base.baseui.calendarview.DateAndTimePickerMainActivity"/>
+        <activity android:name=".base.listview.ListViewMainActivity"/>
+        <activity android:name=".base.listview.ListViewWrapperActivity"/>
+        <activity android:name=".base.listview.ListViewAddHeaderAndFooterActivity">
+        </activity>
+        <activity android:name=".frame.retrofit.RetrofitMainActivity">
+        </activity>
+        <activity android:name=".frame.greendao.GreenDaoMainActivity">
+        </activity>
+        <activity android:name=".frame.retrofit.RetrofitBaseUseActivity">
+        </activity>
     </application>
 
 </manifest>

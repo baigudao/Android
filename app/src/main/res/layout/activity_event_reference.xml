@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_event_reference"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.jackie.android.base.event.EventReferenceActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_event_reference"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.jackie.android.base.event.EventReferenceActivity">
+
+    <include layout="@layout/title_bar"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -16,11 +15,11 @@
         android:autoLink="web"
         android:linksClickable="true"
         android:text="CSDN郭霖博客：
-        1，http://blog.csdn.net/guolin_blog/article/details/9097463
-        2，http://blog.csdn.net/guolin_blog/article/details/9153747
-CSDN张鸿洋博客：
-        1，http://blog.csdn.net/lmj623565791/article/details/38960443
-        2，http://blog.csdn.net/lmj623565791/article/details/39102591"
-        android:textSize="18sp" />
+        \n1，http://blog.csdn.net/guolin_blog/article/details/9097463
+        \n2，http://blog.csdn.net/guolin_blog/article/details/9153747
+\nCSDN张鸿洋博客：
+        \n1，http://blog.csdn.net/lmj623565791/article/details/38960443
+        \n2，http://blog.csdn.net/lmj623565791/article/details/39102591"
+        android:textSize="18sp"/>
 
-</RelativeLayout>
+</LinearLayout>

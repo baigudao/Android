@@ -9,4 +9,11 @@
 
     <include layout="@layout/title_bar" />
 
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/holo_blue_light"
+        android:dividerHeight="10dp" />
+
 </LinearLayout>

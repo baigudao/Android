@@ -8,15 +8,12 @@ import com.jackie.android.R;
 
 public class GlideReferenceActivity extends Activity {
 
-    private TextView tv_title;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_glide_reference);
 
-        tv_title = (TextView)findViewById(R.id.tv_title);
-
+        TextView tv_title = (TextView) findViewById(R.id.tv_title);
         tv_title.setText("参考资料");
     }
 }

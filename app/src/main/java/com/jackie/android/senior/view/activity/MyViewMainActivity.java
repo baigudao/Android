@@ -26,7 +26,7 @@ public class MyViewMainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_view_main);
+        setContentView(R.layout.activity_view_main);
 
         btn_test = (Button)findViewById(R.id.btn_test);
         tv_test = (TextView)findViewById(R.id.tv_test);

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.blankj.utilcode.util.ToastUtils;
 import com.google.gson.Gson;
@@ -27,6 +28,7 @@ public class ListViewBaseUseActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_base_use);
+        ((TextView) findViewById(R.id.tv_title)).setText("ListView的基本用法");
 
         list_view = (ListView) findViewById(R.id.list_view);
         mPage = 1;

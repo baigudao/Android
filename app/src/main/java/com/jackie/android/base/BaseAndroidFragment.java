@@ -9,10 +9,10 @@ import com.jackie.android.BaseFragment;
 import com.jackie.android.R;
 import com.jackie.android.base.animation.MyAnimationMainActivity;
 import com.jackie.android.base.baseui.MyBaseUIMainActivity;
-import com.jackie.android.base.event.MyEventMainActivity;
+import com.jackie.android.base.event.EventMainActivity;
 import com.jackie.android.base.listview.ListViewMainActivity;
 import com.jackie.android.base.recyclerview.MyRecyclerViewMainActivity;
-import com.jackie.android.base.webview.MyWebViewMainActivity;
+import com.jackie.android.base.webview.WebViewMainActivity;
 
 /**
  * Created by jackie on 2017/3/12 15:30.
@@ -37,7 +37,7 @@ public class BaseAndroidFragment extends BaseFragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String data = datas[position];
                 if (data.toLowerCase().equals("webview")) {
-                    startActivity(new Intent(mContext, MyWebViewMainActivity.class));
+                    startActivity(new Intent(mContext, WebViewMainActivity.class));
                 } else if (data.toLowerCase().equals("listview")) {
                     startActivity(new Intent(mContext, ListViewMainActivity.class));
                 } else if (data.toLowerCase().equals("recyclerview")) {
@@ -45,7 +45,7 @@ public class BaseAndroidFragment extends BaseFragment {
                 } else if (data.equals("UI基础组件")) {
                     startActivity(new Intent(mContext, MyBaseUIMainActivity.class));
                 } else if (data.equals("事件处理机制")) {
-                    startActivity(new Intent(mContext, MyEventMainActivity.class));
+                    startActivity(new Intent(mContext, EventMainActivity.class));
                 } else if (data.equals("动画")) {
                     startActivity(new Intent(mContext, MyAnimationMainActivity.class));
                 }

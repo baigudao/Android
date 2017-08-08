@@ -49,15 +49,17 @@ public class ListViewBaseUseAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         ViewHolder viewHolder = null;
         if (view == null) {
+            //第一次加载布局
             view = layoutInflater.inflate(R.layout.activity_list_view_base_use_item, null);
             viewHolder = new ViewHolder();
+            viewHolder.iv_item = (ImageView) view.findViewById(R.id.iv_item);
+            viewHolder.tv_who = (TextView) view.findViewById(R.id.tv_who);
+            viewHolder.tv_desc = (TextView) view.findViewById(R.id.tv_desc);
+            //绑定viewHolder
             view.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) view.getTag();
         }
-        viewHolder.iv_item = (ImageView) view.findViewById(R.id.iv_item);
-        viewHolder.tv_who = (TextView) view.findViewById(R.id.tv_who);
-        viewHolder.tv_desc = (TextView) view.findViewById(R.id.tv_desc);
 
         FuLiImageBean.ResultsBean resultsBean = mFuLiImageBean.getResults().get(i);
 
@@ -69,7 +71,7 @@ public class ListViewBaseUseAdapter extends BaseAdapter {
         return view;
     }
 
-    class ViewHolder {
+    private class ViewHolder {
         private ImageView iv_item;
         private TextView tv_who;
         private TextView tv_desc;

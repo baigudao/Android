@@ -30,7 +30,7 @@ public class CommonFrameFragmentAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return mDatas [position];
+        return mDatas[position];
     }
 
     @Override

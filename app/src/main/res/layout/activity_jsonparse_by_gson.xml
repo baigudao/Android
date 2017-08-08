@@ -1,38 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_jsonparse_by_gson"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.jackie.android.frame.jsonparse.JSONParseByGSONActivity">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_jsonparse_by_gson"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.jackie.android.frame.jsonparse.JSONParseByGSONActivity">
 
-    <include layout="@layout/title_bar" />
+    <include layout="@layout/title_bar"/>
 
     <Button
         android:id="@+id/btn_gson_to_java_object"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="将JSON对象解析成Java对象"/>
 
     <Button
         android:id="@+id/btn_gson_to_java_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="将JSON数组解析成Java集合"/>
-
 
     <Button
         android:id="@+id/btn_gson_java_to_json_object"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="将Java对象转换为json对象" />
+        android:layout_marginTop="5dp"
+        android:text="将Java对象转换为json对象"/>
 
     <Button
         android:id="@+id/btn_gson_java_to_json_array"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="将Java集合转换为json数组" />
+        android:layout_marginTop="5dp"
+        android:text="将Java集合转换为json数组"/>
 
     <ScrollView
         android:layout_width="match_parent"

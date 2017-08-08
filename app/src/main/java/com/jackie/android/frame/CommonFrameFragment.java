@@ -8,10 +8,12 @@ import android.widget.ListView;
 import com.jackie.android.BaseFragment;
 import com.jackie.android.R;
 import com.jackie.android.frame.floatingactionbutton.MyFloatingActionButtonMainActivity;
-import com.jackie.android.frame.glide.MyGlideMainActivity;
-import com.jackie.android.frame.jsonparse.MyJSONParseMainActivity;
-import com.jackie.android.frame.photoview.MyPhotoViewMainActivity;
-import com.jackie.android.frame.pulltorefresh.MyPullToRefreshMainActivity;
+import com.jackie.android.frame.glide.GlideMainActivity;
+import com.jackie.android.frame.greendao.GreenDaoMainActivity;
+import com.jackie.android.frame.jsonparse.JSONParseMainActivity;
+import com.jackie.android.frame.photoview.PhotoViewMainActivity;
+import com.jackie.android.frame.pulltorefresh.PullToRefreshMainActivity;
+import com.jackie.android.frame.retrofit.RetrofitMainActivity;
 import com.jackie.android.frame.rongcloud.activity.MyRongCloudIMMainActivity;
 
 /**
@@ -39,15 +41,19 @@ public class CommonFrameFragment extends BaseFragment {
                 if (data.equals("融云即时通讯")) {
                     startActivity(new Intent(mContext, MyRongCloudIMMainActivity.class));
                 } else if (data.toLowerCase().equals("pulltorefresh")) {
-                    startActivity(new Intent(mContext, MyPullToRefreshMainActivity.class));
+                    startActivity(new Intent(mContext, PullToRefreshMainActivity.class));
                 } else if (data.toLowerCase().equals("glide")) {
-                    startActivity(new Intent(mContext, MyGlideMainActivity.class));
+                    startActivity(new Intent(mContext, GlideMainActivity.class));
                 } else if (data.equals("JSON解析")) {
-                    startActivity(new Intent(mContext, MyJSONParseMainActivity.class));
+                    startActivity(new Intent(mContext, JSONParseMainActivity.class));
                 } else if (data.toLowerCase().equals("photoview")) {
-                    startActivity(new Intent(mContext, MyPhotoViewMainActivity.class));
+                    startActivity(new Intent(mContext, PhotoViewMainActivity.class));
                 } else if (data.toLowerCase().equals("floatingactionbutton")) {
                     startActivity(new Intent(mContext, MyFloatingActionButtonMainActivity.class));
+                } else if (data.toLowerCase().equals("retrofit")) {
+                    startActivity(new Intent(mContext, RetrofitMainActivity.class));
+                } else if (data.toLowerCase().equals("greendao")) {
+                    startActivity(new Intent(mContext, GreenDaoMainActivity.class));
                 }
             }
         });
@@ -58,7 +64,7 @@ public class CommonFrameFragment extends BaseFragment {
     protected void initData() {
         super.initData();
         //准备数据
-        datas = new String[]{"JSON解析", "Glide", "PullToRefresh", "PhotoView",
+        datas = new String[]{"Retrofit", "JSON解析", "GreenDao", "Glide", "PullToRefresh", "PhotoView",
                 "FloatingActionButton", "融云即时通讯",
                 "....."};
         //设置适配器

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.format.DateUtils;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
@@ -43,6 +44,7 @@ public class PullToRefreshListViewActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pull_to_refresh_list_view);
+        ((TextView)findViewById(R.id.tv_title)).setText("ListView");
 
         pull_refresh_list = (PullToRefreshListView) findViewById(R.id.pull_refresh_list);
 

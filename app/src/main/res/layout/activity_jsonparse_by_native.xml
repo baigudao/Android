@@ -10,29 +10,32 @@
 
     <include layout="@layout/title_bar"/>
 
-
     <Button
         android:id="@+id/btn_native_to_java_object"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="将JSON对象解析成Java对象"/>
 
     <Button
         android:id="@+id/btn_native_to_java_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="将JSON数组解析成Java集合"/>
 
     <Button
         android:id="@+id/btn_native_complex"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="复杂Json数据解析"/>
 
     <Button
         android:id="@+id/btn_native_special"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="特殊JSON数据解析"/>
 
     <ScrollView

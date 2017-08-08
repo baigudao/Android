@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.jackie.android.R;
 
@@ -18,7 +19,8 @@ public class MyUtilTestMainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_util_test_main);
+        setContentView(R.layout.activity_util_test_main);
+        ((TextView)findViewById(R.id.tv_title)).setText("Android常用工具类测试");
         listView = (ListView)findViewById(R.id.listview);
         initData();
 

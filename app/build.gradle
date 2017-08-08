@@ -39,4 +39,7 @@ dependencies {
     //    compile project(':android-floating-action-button')
     compile 'com.blankj:utilcode:1.6.4'//Android工具库
     compile 'com.zhy:okhttputils:2.6.2'
+    //Retrofit，这两个依赖库的版本必须要保持一致
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'//Retrofit依赖
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'//Retrofit数据转换的依赖，可以直接将json转化为实体类
 }

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.TextView;
 
 import com.jackie.android.R;
 
@@ -17,6 +18,7 @@ public class BiBiCarMallWebsiteActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bi_bi_car_mall_website);
+        ((TextView) findViewById(R.id.tv_title)).setText("加载网页");
 
         webView = (WebView) findViewById(R.id.webview);
 

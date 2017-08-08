@@ -5,6 +5,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
@@ -32,6 +33,7 @@ public class PullToRefreshGridViewActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pull_to_refresh_grid_view);
+        ((TextView) findViewById(R.id.tv_title)).setText("GridView");
 
         pull_refresh_grid = (PullToRefreshGridView) findViewById(R.id.pull_refresh_grid);
 
@@ -54,7 +56,7 @@ public class PullToRefreshGridViewActivity extends Activity {
         strings.addAll(Arrays.asList(mStrings));
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, strings);
         gridView.setAdapter(adapter);
-        
+
     }
 
     private class GetDataTask extends AsyncTask<Void, Void, String[]> {

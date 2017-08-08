@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_web_view_reference"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.jackie.android.base.webview.WebViewReferenceActivity">
+
+    <include layout="@layout/title_bar"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -17,14 +16,14 @@
         android:autoLink="web"
         android:linksClickable="true"
         android:text="CSDN启舰博客：
-        1，http://blog.csdn.net/harvic880925/article/details/51464687
-        2，http://blog.csdn.net/harvic880925/article/details/51523983
-        3，http://blog.csdn.net/harvic880925/article/details/51583253
-CSDNtypename博客：
-        1，http://blog.csdn.net/typename/article/details/39030091
-        2，http://blog.csdn.net/typename/article/details/39495409
-        3，http://blog.csdn.net/typename/article/details/40302351
-        4，http://blog.csdn.net/typename/article/details/40425275"
+        \n1，http://blog.csdn.net/harvic880925/article/details/51464687
+        \n2，http://blog.csdn.net/harvic880925/article/details/51523983
+        \n3，http://blog.csdn.net/harvic880925/article/details/51583253
+\nCSDNtypename博客：
+        \n1，http://blog.csdn.net/typename/article/details/39030091
+        \n2，http://blog.csdn.net/typename/article/details/39495409
+        \n3，http://blog.csdn.net/typename/article/details/40302351
+        \n4，http://blog.csdn.net/typename/article/details/40425275"
         android:textSize="18sp"/>
 
-</RelativeLayout>
+</LinearLayout>

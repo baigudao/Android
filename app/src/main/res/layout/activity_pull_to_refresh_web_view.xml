@@ -16,7 +16,6 @@
         android:id="@+id/pull_refresh_webview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@id/tv_test"
         ptr:ptrMode="both"/>
 
 </RelativeLayout>

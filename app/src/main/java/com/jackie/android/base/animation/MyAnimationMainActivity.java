@@ -18,7 +18,7 @@ public class MyAnimationMainActivity extends Activity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_animation_main);
+        setContentView(R.layout.activity_animation_main);
         ((TextView) findViewById(R.id.tv_title)).setText("动画");
 
         findViewById(R.id.btn_tween).setOnClickListener(this);
