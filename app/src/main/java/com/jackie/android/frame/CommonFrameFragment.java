@@ -64,7 +64,7 @@ public class CommonFrameFragment extends BaseFragment {
     protected void initData() {
         super.initData();
         //准备数据
-        datas = new String[]{"Retrofit", "JSON解析", "GreenDao", "Glide", "PullToRefresh", "PhotoView",
+        datas = new String[]{"Retrofit", "JSON解析", "GreenDao", "Glide", "PullToRefresh", "XRecyclerView", "BaseRecyclerViewAdapterHelper", "PhotoView",
                 "FloatingActionButton", "融云即时通讯",
                 "....."};
         //设置适配器

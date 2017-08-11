@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_my_recycler_view_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.jackie.android.base.recyclerview.MyRecyclerViewMainActivity">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_my_recycler_view_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.jackie.android.base.recyclerview.MyRecyclerViewMainActivity">
 
-    <include layout="@layout/title_bar" />
+    <include layout="@layout/title_bar"/>
 
     <Button
         android:id="@+id/btn_recycler_list"
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="实现ListView效果"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/btn_recycler_grid"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="实现GridView效果"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/btn_recycler_flow"
@@ -31,13 +31,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="实现瀑布流效果"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_custom_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="自定义RecyclerView实现下拉刷新和上拉加载更多"
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/btn_reference"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="参考资料" />
+        android:text="参考资料"/>
 
 </LinearLayout>
