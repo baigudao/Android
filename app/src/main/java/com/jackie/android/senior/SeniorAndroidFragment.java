@@ -7,6 +7,7 @@ import android.widget.ListView;
 
 import com.jackie.android.BaseFragment;
 import com.jackie.android.R;
+import com.jackie.android.senior.customwidget.CustomWidgetMainActivity;
 import com.jackie.android.senior.view.activity.MyViewMainActivity;
 
 /**
@@ -33,6 +34,8 @@ public class SeniorAndroidFragment extends BaseFragment {
                 String data = datas[position];
                 if (data.toLowerCase().equals("view")){
                     startActivity(new Intent(mContext,MyViewMainActivity.class));
+                }else if (data.equals("自定义控件")){
+                    startActivity(new Intent(mContext,CustomWidgetMainActivity.class));
                 }
             }
         });
@@ -43,7 +46,7 @@ public class SeniorAndroidFragment extends BaseFragment {
     protected void initData() {
         super.initData();
         //准备数据
-        datas = new String[]{"View",
+        datas = new String[]{"View","自定义控件",
                 "....."};
         //设置适配器
         adapter = new SeniorAndroidFragmentAdapter(mContext, datas);

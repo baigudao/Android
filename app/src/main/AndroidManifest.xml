@@ -87,6 +87,8 @@
         <activity android:name=".frame.retrofit.RetrofitBaseUseActivity">
         </activity>
         <activity android:name=".base.recyclerview.custom_recyclerview.TestRefreshRecyclerViewActivity"/>
+        <activity android:name=".senior.customwidget.CustomWidgetMainActivity">
+        </activity>
     </application>
 
 </manifest>

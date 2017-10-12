@@ -18,14 +18,14 @@ ADDED from D:\android_workspace\Android\Android-PullToRefresh-Sample\src\main\An
 uses-sdk
 ADDED from D:\android_workspace\Android\Android-PullToRefresh-Sample\src\main\AndroidManifest.xml:7:5-9:41
 MERGED from [Android:pullToRefreshListFragment:unspecified] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\Android\pullToRefreshListFragment\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [Android:pullToRefreshViewPager:unspecified] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\Android\pullToRefreshViewPager\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [Android:pullToRefresh:unspecified] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\Android\pullToRefresh\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-fragment:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:21:5-23:60
-MERGED from [Android:pullToRefreshViewPager:unspecified] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\Android\pullToRefreshViewPager\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
@@ -39,14 +39,14 @@ MERGED from [Android:pullToRefreshViewPager:unspecified] D:\android_workspace\An
 application
 ADDED from D:\android_workspace\Android\Android-PullToRefresh-Sample\src\main\AndroidManifest.xml:11:5-64:19
 MERGED from [Android:pullToRefreshListFragment:unspecified] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\Android\pullToRefreshListFragment\unspecified\AndroidManifest.xml:11:5-20
+MERGED from [Android:pullToRefreshViewPager:unspecified] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\Android\pullToRefreshViewPager\unspecified\AndroidManifest.xml:11:5-20
 MERGED from [Android:pullToRefresh:unspecified] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\Android\pullToRefresh\unspecified\AndroidManifest.xml:11:5-20
 MERGED from [com.android.support:support-v4:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-fragment:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [Android:pullToRefreshViewPager:unspecified] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\Android\pullToRefreshViewPager\unspecified\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\android_workspace\Android\Android-PullToRefresh-Sample\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from D:\android_workspace\Android\Android-PullToRefresh-Sample\src\main\AndroidManifest.xml:14:9-41
 	android:hardwareAccelerated

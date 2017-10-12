@@ -12,12 +12,12 @@
         "source": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
-        "merged": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
         "source": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",

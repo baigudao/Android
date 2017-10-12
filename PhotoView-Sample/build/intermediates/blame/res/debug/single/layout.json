@@ -36,12 +36,12 @@
         "source": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_big_media.xml"
     },
     {
-        "merged": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "D:\\android_workspace\\Android\\PhotoView-Sample\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
